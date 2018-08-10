@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130D57A020F568C600A8CD1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 130D579F20F568C500A8CD1D /* GoogleService-Info.plist */; };
+		1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */; };
+		1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC521000A870008CBF6 /* CBTDefViewController.swift */; };
+		134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AE0B421139482000C0858 /* SignUpViewController.swift */; };
 		138C305420898577006D4129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305320898577006D4129 /* AppDelegate.swift */; };
-		138C305620898577006D4129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* ViewController.swift */; };
+		138C305620898577006D4129 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* SignInViewController.swift */; };
 		138C305920898577006D4129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305720898577006D4129 /* Main.storyboard */; };
 		138C305B20898579006D4129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138C305A20898579006D4129 /* Assets.xcassets */; };
 		138C305E20898579006D4129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305C20898579006D4129 /* LaunchScreen.storyboard */; };
 		138C306920898579006D4129 /* FeelicityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C306820898579006D4129 /* FeelicityTests.swift */; };
 		138C307420898579006D4129 /* FeelicityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C307320898579006D4129 /* FeelicityUITests.swift */; };
+		337E71F27B9BA5BB78FFD533 /* Pods_Feelicity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */; };
+		33D706AC64151B5E43B82044 /* Pods_FeelicityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */; };
+		FB31C8EB71971ACA4AE18494 /* Pods_FeelicityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feelicity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		130D579F20F568C500A8CD1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogASessionViewController.swift; sourceTree = "<group>"; };
+		1327BCC521000A870008CBF6 /* CBTDefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDefViewController.swift; sourceTree = "<group>"; };
+		134AE0B421139482000C0858 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		138C305520898577006D4129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		138C305820898577006D4129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138C305A20898579006D4129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138C305D20898579006D4129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,14 @@
 		138C306F20898579006D4129 /* FeelicityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelicityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C307320898579006D4129 /* FeelicityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelicityUITests.swift; sourceTree = "<group>"; };
 		138C307520898579006D4129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1879F8FD42C5802E621C343E /* Pods-FeelicityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityTests/Pods-FeelicityTests.release.xcconfig"; sourceTree = "<group>"; };
+		40B1EF7E0305471429A9BAA8 /* Pods-FeelicityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityUITests/Pods-FeelicityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75C30687E9CF337D69D524F2 /* Pods-Feelicity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelicity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A49CB094FCFB3B6972BF87 /* Pods-Feelicity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelicity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity.release.xcconfig"; sourceTree = "<group>"; };
+		BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelicityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F0991304A6FB04221AD534 /* Pods-FeelicityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityTests/Pods-FeelicityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD29209EA074A8B9DC42D857 /* Pods-FeelicityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityUITests/Pods-FeelicityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelicityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337E71F27B9BA5BB78FFD533 /* Pods_Feelicity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB31C8EB71971ACA4AE18494 /* Pods_FeelicityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D706AC64151B5E43B82044 /* Pods_FeelicityUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				138C306720898579006D4129 /* FeelicityTests */,
 				138C307220898579006D4129 /* FeelicityUITests */,
 				138C305120898576006D4129 /* Products */,
+				30DFF150D5F5053BBF41EEF2 /* Pods */,
+				646B40888A4F5E794DFF5C76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				138C305320898577006D4129 /* AppDelegate.swift */,
-				138C305520898577006D4129 /* ViewController.swift */,
+				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				134AE0B421139482000C0858 /* SignUpViewController.swift */,
+				1327BCC521000A870008CBF6 /* CBTDefViewController.swift */,
+				1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */,
 				138C305A20898579006D4129 /* Assets.xcassets */,
 				138C305C20898579006D4129 /* LaunchScreen.storyboard */,
 				138C305F20898579006D4129 /* Info.plist */,
+				130D579F20F568C500A8CD1D /* GoogleService-Info.plist */,
 			);
 			path = Feelicity;
 			sourceTree = "<group>";
@@ -125,6 +154,29 @@
 			path = FeelicityUITests;
 			sourceTree = "<group>";
 		};
+		30DFF150D5F5053BBF41EEF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C30687E9CF337D69D524F2 /* Pods-Feelicity.debug.xcconfig */,
+				B8A49CB094FCFB3B6972BF87 /* Pods-Feelicity.release.xcconfig */,
+				C2F0991304A6FB04221AD534 /* Pods-FeelicityTests.debug.xcconfig */,
+				1879F8FD42C5802E621C343E /* Pods-FeelicityTests.release.xcconfig */,
+				40B1EF7E0305471429A9BAA8 /* Pods-FeelicityUITests.debug.xcconfig */,
+				CD29209EA074A8B9DC42D857 /* Pods-FeelicityUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		646B40888A4F5E794DFF5C76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */,
+				BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */,
+				FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Feelicity" */;
 			buildPhases = (
+				1D4C20F0F9C4B44E8F59196E /* [CP] Check Pods Manifest.lock */,
 				138C304C20898576006D4129 /* Sources */,
 				138C304D20898576006D4129 /* Frameworks */,
 				138C304E20898576006D4129 /* Resources */,
+				FC1E9CD6A2903F6DFC8B5816 /* [CP] Embed Pods Frameworks */,
+				AFCCAF9765271F60A411CAFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 138C307B20898579006D4129 /* Build configuration list for PBXNativeTarget "FeelicityTests" */;
 			buildPhases = (
+				06DB9FCB0BC8393BE2A048D8 /* [CP] Check Pods Manifest.lock */,
 				138C306020898579006D4129 /* Sources */,
 				138C306120898579006D4129 /* Frameworks */,
 				138C306220898579006D4129 /* Resources */,
@@ -167,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 138C307E20898579006D4129 /* Build configuration list for PBXNativeTarget "FeelicityUITests" */;
 			buildPhases = (
+				4F140FCCEDAE737B8AC77E5F /* [CP] Check Pods Manifest.lock */,
 				138C306B20898579006D4129 /* Sources */,
 				138C306C20898579006D4129 /* Frameworks */,
 				138C306D20898579006D4129 /* Resources */,
@@ -230,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				138C305E20898579006D4129 /* LaunchScreen.storyboard in Resources */,
+				130D57A020F568C600A8CD1D /* GoogleService-Info.plist in Resources */,
 				138C305B20898579006D4129 /* Assets.xcassets in Resources */,
 				138C305920898577006D4129 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +309,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06DB9FCB0BC8393BE2A048D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeelicityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D4C20F0F9C4B44E8F59196E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feelicity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F140FCCEDAE737B8AC77E5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeelicityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCCAF9765271F60A411CAFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1E9CD6A2903F6DFC8B5816 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		138C304C20898576006D4129 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138C305620898577006D4129 /* ViewController.swift in Sources */,
+				1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */,
+				138C305620898577006D4129 /* SignInViewController.swift in Sources */,
+				1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */,
 				138C305420898577006D4129 /* AppDelegate.swift in Sources */,
+				134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +596,7 @@
 		};
 		138C307920898579006D4129 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C30687E9CF337D69D524F2 /* Pods-Feelicity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +615,7 @@
 		};
 		138C307A20898579006D4129 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8A49CB094FCFB3B6972BF87 /* Pods-Feelicity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +634,7 @@
 		};
 		138C307C20898579006D4129 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F0991304A6FB04221AD534 /* Pods-FeelicityTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +656,7 @@
 		};
 		138C307D20898579006D4129 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1879F8FD42C5802E621C343E /* Pods-FeelicityTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +678,7 @@
 		};
 		138C307F20898579006D4129 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B1EF7E0305471429A9BAA8 /* Pods-FeelicityUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +699,7 @@
 		};
 		138C308020898579006D4129 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD29209EA074A8B9DC42D857 /* Pods-FeelicityUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
