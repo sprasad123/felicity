@@ -21,7 +21,7 @@ class  Q2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Journal.current?.currentPage = 5
+        Journal.current?.currentPage = 6
         ref = Database.database().reference()
     }
     

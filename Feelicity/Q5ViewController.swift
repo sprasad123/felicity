@@ -18,7 +18,7 @@ class  Q5ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Journal.current?.currentPage = 8
+        Journal.current?.currentPage = 9
         ref = Database.database().reference()
     }
     

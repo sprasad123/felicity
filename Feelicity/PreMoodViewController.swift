@@ -28,7 +28,7 @@ class PreMoodViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Journal.current?.currentPage = 3
+        Journal.current?.currentPage = 4
         ref = Database.database().reference()
     }
     

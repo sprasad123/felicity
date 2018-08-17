@@ -30,7 +30,7 @@ class  Q4ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Journal.current?.currentPage = 7
+        Journal.current?.currentPage = 8
         ref = Database.database().reference()
     }
     
