@@ -496,7 +496,13 @@
                         <viewLayoutGuide key="safeArea" id="AD0-jz-9kr"/>
                     </view>
                     <connections>
+                        <outlet property="AngryButton" destination="tDP-1z-bPO" id="gMG-ss-U2O"/>
+                        <outlet property="HappyButton" destination="eXx-oE-iug" id="PDE-Dq-nMS"/>
+                        <outlet property="LovedButton" destination="5pq-vN-Tls" id="2J1-2W-xC5"/>
+                        <outlet property="NervousButton" destination="2u5-7a-oje" id="G9f-aT-dnt"/>
                         <outlet property="PreMoodSlider" destination="hPv-KL-iQM" id="KoG-xK-dhI"/>
+                        <outlet property="SadButton" destination="e4Q-21-xSf" id="Q44-Py-KoM"/>
+                        <outlet property="TiredButton" destination="IYG-gs-eyl" id="3E1-Wu-BTY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-5P-pmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -506,7 +512,7 @@
         <!--Q1 View Controller-->
         <scene sceneID="GxW-Cd-UgK">
             <objects>
-                <viewController storyboardIdentifier="Q1" id="4gD-w4-Kbs" userLabel="Q1 View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q1" id="4gD-w4-Kbs" userLabel="Q1 View Controller" customClass="Q1ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVs-iw-ZPR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,6 +675,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fbV-DI-may"/>
                     </view>
+                    <connections>
+                        <outlet property="NoSwitch" destination="Hdb-Xo-hox" id="GXI-tb-pab"/>
+                        <outlet property="Q1TextBox" destination="wos-mg-nGH" id="bMS-f7-QO9"/>
+                        <outlet property="YesSwitch" destination="je7-2O-ALn" id="dZ1-IR-UMD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dD3-yV-dWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,7 +688,7 @@
         <!--Q2 View Controller-->
         <scene sceneID="NlA-dw-13Y">
             <objects>
-                <viewController storyboardIdentifier="Q2" id="0xB-cC-kKP" userLabel="Q2 View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q2" id="0xB-cC-kKP" userLabel="Q2 View Controller" customClass="Q2ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2IH-id-gXV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -733,6 +744,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gEt-Bw-NgW"/>
                     </view>
+                    <connections>
+                        <outlet property="Q2TextBox" destination="9y6-BY-V9h" id="g3G-EW-buE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJs-Au-8jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -741,7 +755,7 @@
         <!--Q3 View Controller-->
         <scene sceneID="Gbl-rE-Y22">
             <objects>
-                <viewController storyboardIdentifier="Q3" id="Ggd-IF-gJg" userLabel="Q3 View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q3" id="Ggd-IF-gJg" userLabel="Q3 View Controller" customClass="Q3ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2LR-KN-9vl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -827,6 +841,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0sE-sR-LEs"/>
                     </view>
+                    <connections>
+                        <outlet property="Q3TextBox" destination="cKM-p6-8cS" id="F26-pW-aSO"/>
+                        <outlet property="Q3TextBox2" destination="EyH-UH-40f" id="1qY-06-PB7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urb-ng-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -835,7 +853,7 @@
         <!--Q4 View Controller-->
         <scene sceneID="17E-k7-M1V">
             <objects>
-                <viewController storyboardIdentifier="Q4" id="Fyn-Ms-PJn" userLabel="Q4 View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q4" id="Fyn-Ms-PJn" userLabel="Q4 View Controller" customClass="Q4ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G0P-J4-ea1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -991,6 +1009,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fSa-Mb-GY6"/>
                     </view>
+                    <connections>
+                        <outlet property="AngerButton" destination="Rwg-am-hyS" id="Fke-cx-e2j"/>
+                        <outlet property="EmptinessButton" destination="ARt-FI-2f3" id="xwr-Ls-FTy"/>
+                        <outlet property="FrustrationButton" destination="zhO-pp-Ae6" id="vXH-NU-qwT"/>
+                        <outlet property="GuiltButton" destination="4Fh-hu-qiL" id="nPQ-32-EBV"/>
+                        <outlet property="HopelessnessButton" destination="bIh-s0-TyU" id="Hx2-Zf-tc5"/>
+                        <outlet property="IrritationButton" destination="zob-d2-xtt" id="opx-7p-aST"/>
+                        <outlet property="LethargicButton" destination="c0d-g0-7S3" id="JUl-PD-uWO"/>
+                        <outlet property="SensitiveButton" destination="vQd-SF-r2Z" id="UW0-HU-uZj"/>
+                        <outlet property="ShameButton" destination="Nc8-TY-C71" id="7tC-TU-MHf"/>
+                        <outlet property="VulnerableButton" destination="kxH-DF-mtJ" id="ceZ-zc-Kv8"/>
+                        <outlet property="WorthlessnessButton" destination="anG-pY-ncZ" id="toB-QX-N1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzb-nz-3UM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
