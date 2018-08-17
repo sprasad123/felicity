@@ -38,6 +38,7 @@
 		138C307420898579006D4129 /* FeelicityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C307320898579006D4129 /* FeelicityUITests.swift */; };
 		337E71F27B9BA5BB78FFD533 /* Pods_Feelicity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */; };
 		33D706AC64151B5E43B82044 /* Pods_FeelicityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */; };
+		D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8351D212752C500225736 /* PreMoodViewController.swift */; };
 		FB31C8EB71971ACA4AE18494 /* Pods_FeelicityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		BAB779971DBACD2B744F2510 /* Pods_FeelicityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelicityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F0991304A6FB04221AD534 /* Pods-FeelicityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityTests/Pods-FeelicityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD29209EA074A8B9DC42D857 /* Pods-FeelicityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityUITests/Pods-FeelicityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D4D8351D212752C500225736 /* PreMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreMoodViewController.swift; sourceTree = "<group>"; };
 		FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeelicityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				D4D8351D212752C500225736 /* PreMoodViewController.swift */,
 				134F99812125073200E10B6C /* User.swift */,
 				134F9983212513B900E10B6C /* Journal.swift */,
 				134F9961212474A800E10B6C /* Q6ViewController.swift */,
@@ -478,6 +481,7 @@
 				1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */,
 				134F997C2124757300E10B6C /* Q19ViewController.swift in Sources */,
 				134F996E2124751600E10B6C /* Q12ViewController.swift in Sources */,
+				D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */,
 				134F99802124759800E10B6C /* EndViewController.swift in Sources */,
 				134F996C2124750200E10B6C /* Q11ViewController.swift in Sources */,
 				134F9966212474D900E10B6C /* Q8ViewController.swift in Sources */,
@@ -672,7 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VY6L2QW5JY;
+				DEVELOPMENT_TEAM = 3BKJ3Q9LUJ;
 				INFOPLIST_FILE = Feelicity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,7 +695,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VY6L2QW5JY;
+				DEVELOPMENT_TEAM = 3BKJ3Q9LUJ;
 				INFOPLIST_FILE = Feelicity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

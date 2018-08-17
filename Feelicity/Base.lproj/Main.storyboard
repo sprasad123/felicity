@@ -335,7 +335,7 @@
         <!--PreMood View Controller-->
         <scene sceneID="PKY-Nw-WLi">
             <objects>
-                <viewController id="cl7-Lx-c9Z" userLabel="PreMood View Controller" sceneMemberID="viewController">
+                <viewController id="cl7-Lx-c9Z" userLabel="PreMood View Controller" customClass="PreMoodViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EwG-O9-p3C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,6 +495,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AD0-jz-9kr"/>
                     </view>
+                    <connections>
+                        <outlet property="PreMoodSlider" destination="hPv-KL-iQM" id="KoG-xK-dhI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-5P-pmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
