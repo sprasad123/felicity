@@ -29,6 +29,7 @@
 		134F99802124759800E10B6C /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F997F2124759800E10B6C /* EndViewController.swift */; };
 		134F99822125073200E10B6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99812125073200E10B6C /* User.swift */; };
 		134F9984212513B900E10B6C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9983212513B900E10B6C /* Journal.swift */; };
+		1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */; };
 		138C305420898577006D4129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305320898577006D4129 /* AppDelegate.swift */; };
 		138C305620898577006D4129 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* SignInViewController.swift */; };
 		138C305920898577006D4129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305720898577006D4129 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 		134F997F2124759800E10B6C /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		134F99812125073200E10B6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		134F9983212513B900E10B6C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDiagramViewController.swift; sourceTree = "<group>"; };
 		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */,
 				134F99812125073200E10B6C /* User.swift */,
 				134F9983212513B900E10B6C /* Journal.swift */,
 				D4D8351D212752C500225736 /* PreMoodViewController.swift */,
@@ -515,6 +518,7 @@
 				134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */,
 				134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */,
 				D4D8352A2127911600225736 /* Q5ViewController.swift in Sources */,
+				1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */,
 				134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */,
 				134F99742124754300E10B6C /* Q15ViewController.swift in Sources */,
 				1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */,

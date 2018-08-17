@@ -66,7 +66,7 @@ class LogASessionViewController: UIViewController, GIDSignInUIDelegate {
             
         case 8 :
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let Q5VC = storyboard.instantiateViewController(withIdentifier: "Q5") as! CQ5ViewController
+            let Q5VC = storyboard.instantiateViewController(withIdentifier: "Q5") as! Q5ViewController
             self.navigationController?.pushViewController(Q5VC, animated: true)
             break
             
