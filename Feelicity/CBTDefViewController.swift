@@ -11,6 +11,9 @@ import UIKit
 
 class CBTDefViewController: UIViewController {
     
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 2
+    }
 
     
 }

@@ -80,7 +80,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                 return
             }
             // User is signed in
-            //
+            
             self.goToMainVC()
         }
     }
@@ -123,6 +123,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
     
     @objc func goToMainVC() {
         
+        User.setCurrentUser()
         //Put segue code here, In here go to next VC by calling your segue or doing it programattically
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let LogASessionVC = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController") as! LogASessionViewController

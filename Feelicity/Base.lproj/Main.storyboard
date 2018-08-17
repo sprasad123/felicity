@@ -14,7 +14,7 @@
         <!--Login View Controller-->
         <scene sceneID="Sor-Tu-FxD">
             <objects>
-                <viewController id="lKp-sK-09M" userLabel="Login View Controller" customClass="SignInViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="lKp-sK-09M" userLabel="Login View Controller" customClass="SignInViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e6n-mk-1Oa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +76,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QLE-cy-EZ7" kind="presentation" id="Rdd-Dc-Hbq"/>
+                                    <segue destination="QLE-cy-EZ7" kind="show" identifier="signUpFrame" id="Rdd-Dc-Hbq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-wF-SGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="26.53673163418291"/>
+            <point key="canvasLocation" x="599" y="32"/>
         </scene>
         <!--LogASession View Controller-->
         <scene sceneID="6y5-vb-Mij">
@@ -147,6 +147,9 @@
                                 <state key="normal" title="LOG A SESSION">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="mag-UB-iLO" kind="show" id="bOj-VL-iz6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FELICITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-JE-D5d">
                                 <rect key="frame" x="116.5" y="45" width="141" height="42"/>
@@ -165,6 +168,7 @@
                                 </state>
                                 <connections>
                                     <action selector="goToSignInVC" destination="4Mn-mH-7FG" eventType="touchUpInside" id="16G-9i-Cul"/>
+                                    <segue destination="lKp-sK-09M" kind="show" id="8uP-pC-YDv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,13 +190,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ovt-uS-8wM"/>
                     </view>
-                    <connections>
-                        <segue destination="mag-UB-iLO" kind="presentation" identifier="definition" id="L1i-sy-mAE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkE-qx-oAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="26.53673163418291"/>
+            <point key="canvasLocation" x="2116" y="38"/>
         </scene>
         <!--CBTDefinition View Controller-->
         <scene sceneID="dGz-N2-VQq">
@@ -209,7 +210,7 @@
                                 <rect key="frame" x="310" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="8wc-rG-dA4" kind="presentation" identifier="next" id="uuP-gB-Tzq"/>
+                                    <segue destination="8wc-rG-dA4" kind="show" identifier="next" id="uuP-gB-Tzq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is CBT (Cognitive Behavioral Therapy)?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp9-t3-GvR">
@@ -262,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Vd-jM-UT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356" y="26.53673163418291"/>
+            <point key="canvasLocation" x="2849" y="32"/>
         </scene>
         <!--CBTDiagram View Controller-->
         <scene sceneID="fKe-hu-Oso">
@@ -279,7 +280,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="cl7-Lx-c9Z" kind="presentation" identifier="next" id="lCB-08-ZLH"/>
+                                    <segue destination="cl7-Lx-c9Z" kind="show" identifier="next" id="lCB-08-ZLH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CBT is focused on the PRESENT, on your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxe-qt-b97">
@@ -329,7 +330,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATo-LE-gRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3090.4000000000001" y="28.335832083958024"/>
+            <point key="canvasLocation" x="3590" y="32"/>
         </scene>
         <!--PreMood View Controller-->
         <scene sceneID="PKY-Nw-WLi">
@@ -346,7 +347,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="4gD-w4-Kbs" kind="presentation" identifier="name" id="xJI-DT-wci"/>
+                                    <segue destination="4gD-w4-Kbs" kind="show" identifier="name" id="xJI-DT-wci"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hPv-KL-iQM">
@@ -497,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4w-5P-pmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3812" y="27.436281859070466"/>
+            <point key="canvasLocation" x="4335" y="32"/>
         </scene>
         <!--Q1 View Controller-->
         <scene sceneID="GxW-Cd-UgK">
@@ -510,9 +511,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DS-iK-3lC">
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
-                                <connections>
-                                    <segue destination="0xB-cC-kKP" kind="presentation" identifier="name" id="NzR-X6-Yog"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What thoughts or images went through your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEW-KE-lqb">
                                 <rect key="frame" x="19" y="40" width="338" height="21"/>
@@ -562,6 +560,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W28-u1-0lW">
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <segue destination="0xB-cC-kKP" kind="show" id="vNF-sO-VHH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-ll-CWF">
                                 <rect key="frame" x="97" y="118" width="28" height="21"/>
@@ -668,7 +669,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dD3-yV-dWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4544.8000000000002" y="26.53673163418291"/>
+            <point key="canvasLocation" x="5097" y="32"/>
         </scene>
         <!--Q2 View Controller-->
         <scene sceneID="NlA-dw-13Y">
@@ -685,7 +686,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="Ggd-IF-gJg" kind="presentation" identifier="next" id="qQP-Ir-idP"/>
+                                    <segue destination="Ggd-IF-gJg" kind="show" identifier="next" id="qQP-Ir-idP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-YY-X4V">
@@ -732,7 +733,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJs-Au-8jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5272.8000000000002" y="27.436281859070466"/>
+            <point key="canvasLocation" x="5868" y="32"/>
         </scene>
         <!--Q3 View Controller-->
         <scene sceneID="Gbl-rE-Y22">
@@ -749,7 +750,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="Fyn-Ms-PJn" kind="presentation" id="3mA-jc-tvx"/>
+                                    <segue destination="Fyn-Ms-PJn" kind="show" id="3mA-jc-tvx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-b8-12z">
@@ -826,7 +827,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urb-ng-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6034.3999999999996" y="29.23538230884558"/>
+            <point key="canvasLocation" x="6610" y="32"/>
         </scene>
         <!--Q4 View Controller-->
         <scene sceneID="17E-k7-M1V">
@@ -849,7 +850,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="aoy-S5-X9O" kind="presentation" id="PX4-lH-VFO"/>
+                                    <segue destination="aoy-S5-X9O" kind="show" id="PX4-lH-VFO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What upsetting emotions did you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="881-sd-yzW">
@@ -990,7 +991,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzb-nz-3UM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6789.6000000000004" y="31.934032983508249"/>
+            <point key="canvasLocation" x="7335" y="36"/>
         </scene>
         <!--Q5 View Controller-->
         <scene sceneID="iKA-RZ-eGh">
@@ -1013,7 +1014,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="czH-mO-wln" kind="presentation" id="bTY-NM-f2N"/>
+                                    <segue destination="czH-mO-wln" kind="show" id="bTY-NM-f2N"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1034,12 +1035,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKG-NS-SnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6790" y="757"/>
+            <point key="canvasLocation" x="8094" y="41"/>
         </scene>
         <!--Q6 View Controller-->
         <scene sceneID="ynh-Kp-h2G">
             <objects>
-                <viewController id="czH-mO-wln" userLabel="Q6 View Controller" sceneMemberID="viewController">
+                <viewController id="czH-mO-wln" userLabel="Q6 View Controller" customClass="Q6ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kOI-gR-Uhm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1138,7 +1139,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="SUR-e5-g6H" kind="presentation" id="p8v-Ne-yQA"/>
+                                    <segue destination="SUR-e5-g6H" kind="show" id="p8v-Ne-yQA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select all that apply." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fx-6E-kxS">
@@ -1215,12 +1216,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81p-vq-POv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7513" y="759"/>
+            <point key="canvasLocation" x="8830" y="41"/>
         </scene>
         <!--Q7 View Controller-->
         <scene sceneID="qQA-oM-F1u">
             <objects>
-                <viewController id="SUR-e5-g6H" userLabel="Q7 View Controller" sceneMemberID="viewController">
+                <viewController id="SUR-e5-g6H" userLabel="Q7 View Controller" customClass="Q7ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zfz-ib-1H6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1232,7 +1233,8 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="sEX-Of-5Rq" kind="presentation" identifier="next" id="pHG-Pc-kwb"/>
+                                    <action selector="submit:" destination="SUR-e5-g6H" eventType="touchUpInside" id="Cis-E9-egU"/>
+                                    <segue destination="sEX-Of-5Rq" kind="show" identifier="next" id="pHG-Pc-kwb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MzD-N3-E5d">
@@ -1287,15 +1289,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yMb-Ei-bVc"/>
                     </view>
+                    <connections>
+                        <outlet property="text1" destination="MzD-N3-E5d" id="u5x-ku-psJ"/>
+                        <outlet property="text2" destination="gOd-Wx-Zx0" id="QRn-hk-g42"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLo-aX-2Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7528.8000000000002" y="33.733133433283363"/>
+            <point key="canvasLocation" x="9575" y="41"/>
         </scene>
         <!--Q8 View Controller-->
         <scene sceneID="ytt-Cx-k6Y">
             <objects>
-                <viewController id="sEX-Of-5Rq" userLabel="Q8 View Controller" sceneMemberID="viewController">
+                <viewController id="sEX-Of-5Rq" userLabel="Q8 View Controller" customClass="Q8ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8C-gu-Fh2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1307,7 +1313,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="I6S-ac-pG0" kind="presentation" identifier="next" id="ry6-Xj-fmN"/>
+                                    <segue destination="I6S-ac-pG0" kind="show" identifier="next" id="ry6-Xj-fmN"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CnB-Ae-lU2">
@@ -1368,12 +1374,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qe2-l9-3Eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8288.7999999999993" y="34.632683658170919"/>
+            <point key="canvasLocation" x="10298" y="36"/>
         </scene>
         <!--Q9 View Controller-->
         <scene sceneID="AjZ-gH-q4e">
             <objects>
-                <viewController id="I6S-ac-pG0" userLabel="Q9 View Controller" sceneMemberID="viewController">
+                <viewController id="I6S-ac-pG0" userLabel="Q9 View Controller" customClass="Q9ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SmD-TM-ZAg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1385,7 +1391,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="Jzj-96-l9p" kind="presentation" identifier="next" id="4jp-or-uQW"/>
+                                    <segue destination="Jzj-96-l9p" kind="show" identifier="next" id="4jp-or-uQW"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pka-1j-fOA">
@@ -1445,12 +1451,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5z-yR-hC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9063.2000000000007" y="32.833583208395808"/>
+            <point key="canvasLocation" x="11073" y="37"/>
         </scene>
         <!--Q10 View Controller-->
         <scene sceneID="6bx-3y-cfH">
             <objects>
-                <viewController id="Jzj-96-l9p" userLabel="Q10 View Controller" sceneMemberID="viewController">
+                <viewController id="Jzj-96-l9p" userLabel="Q10 View Controller" customClass="Q10ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxv-pq-Zga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1468,7 +1474,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="9wo-h1-Lle" kind="presentation" identifier="next" id="aIk-IU-Lrh"/>
+                                    <segue destination="9wo-h1-Lle" kind="show" identifier="next" id="aIk-IU-Lrh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="could have taken." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-xc-0Nf">
@@ -1546,12 +1552,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XA-1D-AcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9802.3999999999996" y="34.632683658170919"/>
+            <point key="canvasLocation" x="11846" y="32"/>
         </scene>
         <!--Q11 View Controller-->
         <scene sceneID="vCY-Mg-zO3">
             <objects>
-                <viewController id="9wo-h1-Lle" userLabel="Q11 View Controller" sceneMemberID="viewController">
+                <viewController id="9wo-h1-Lle" userLabel="Q11 View Controller" customClass="Q11ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mlk-es-DvU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1569,7 +1575,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="f6c-Xa-LaG" kind="presentation" identifier="next" id="II1-0p-c0m"/>
+                                    <segue destination="f6c-Xa-LaG" kind="show" identifier="next" id="II1-0p-c0m"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consider the bigger picture—are these" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV6-ra-GiQ">
@@ -1638,12 +1644,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgp-F2-TUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10544.799999999999" y="32.833583208395808"/>
+            <point key="canvasLocation" x="12606" y="38"/>
         </scene>
         <!--Q12 View Controller-->
         <scene sceneID="TkX-tE-8Jk">
             <objects>
-                <viewController id="f6c-Xa-LaG" userLabel="Q12 View Controller" sceneMemberID="viewController">
+                <viewController id="f6c-Xa-LaG" userLabel="Q12 View Controller" customClass="Q12ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWu-dq-f3Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1655,7 +1661,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="dST-QR-9L8" kind="presentation" identifier="next" id="dKF-yb-xtK"/>
+                                    <segue destination="dST-QR-9L8" kind="show" identifier="next" id="dKF-yb-xtK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step away and look at the full situation—" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joh-2p-3PH">
@@ -1721,12 +1727,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tOq-Th-6Xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11280.799999999999" y="31.934032983508249"/>
+            <point key="canvasLocation" x="13359" y="32"/>
         </scene>
         <!--Q13 View Controller-->
         <scene sceneID="22p-NC-fQO">
             <objects>
-                <viewController id="dST-QR-9L8" userLabel="Q13 View Controller" sceneMemberID="viewController">
+                <viewController id="dST-QR-9L8" userLabel="Q13 View Controller" customClass="Q13ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwA-jp-OqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1738,7 +1744,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="M2D-wH-D4P" kind="presentation" identifier="next" id="oFz-A1-tA3"/>
+                                    <segue destination="M2D-wH-D4P" kind="show" identifier="next" id="oFz-A1-tA3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try identifying problematic patterns." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdx-xc-d8a">
@@ -1925,12 +1931,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6N-AS-ubE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12026.4" y="35.532233883058474"/>
+            <point key="canvasLocation" x="14154" y="38"/>
         </scene>
         <!--Q14 View Controller-->
         <scene sceneID="tL3-HJ-vas">
             <objects>
-                <viewController id="M2D-wH-D4P" userLabel="Q14 View Controller" sceneMemberID="viewController">
+                <viewController id="M2D-wH-D4P" userLabel="Q14 View Controller" customClass="Q14ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UDE-2U-sxT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1942,7 +1948,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="5PJ-6T-Ndr" kind="presentation" identifier="next" id="lFY-un-ZGl"/>
+                                    <segue destination="5PJ-6T-Ndr" kind="show" identifier="next" id="lFY-un-ZGl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What thought impacted you the most" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67z-MW-wqc">
@@ -2026,12 +2032,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhJ-iT-yzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12796" y="37.331334332833585"/>
+            <point key="canvasLocation" x="14945" y="38"/>
         </scene>
         <!--Q15 View Controller-->
         <scene sceneID="DOY-Rk-i1L">
             <objects>
-                <viewController id="5PJ-6T-Ndr" userLabel="Q15 View Controller" sceneMemberID="viewController">
+                <viewController id="5PJ-6T-Ndr" userLabel="Q15 View Controller" customClass="Q15ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKM-Bs-Z9N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2043,7 +2049,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="odE-hh-acc" kind="presentation" identifier="next" id="7Kc-4g-w4n"/>
+                                    <segue destination="odE-hh-acc" kind="show" identifier="next" id="7Kc-4g-w4n"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How else can this thought or image be" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vj-bS-ml1">
@@ -2120,12 +2126,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNl-QX-tpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13552.799999999999" y="35.532233883058474"/>
+            <point key="canvasLocation" x="15706" y="41"/>
         </scene>
         <!--Q16 View Controller-->
         <scene sceneID="22u-SV-R5x">
             <objects>
-                <viewController id="odE-hh-acc" userLabel="Q16 View Controller" sceneMemberID="viewController">
+                <viewController id="odE-hh-acc" userLabel="Q16 View Controller" customClass="Q16ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1H3-dR-TWT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2137,7 +2143,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="dMW-Ho-Q1l" kind="presentation" identifier="next" id="tC9-dW-Uvz"/>
+                                    <segue destination="dMW-Ho-Q1l" kind="show" identifier="next" id="tC9-dW-Uvz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After considering the positives and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifz-Kk-hvh">
@@ -2218,12 +2224,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ep-Hy-cGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14340" y="34.632683658170919"/>
+            <point key="canvasLocation" x="16470" y="41"/>
         </scene>
         <!--Q17 View Controller-->
         <scene sceneID="o9C-Us-ste">
             <objects>
-                <viewController id="dMW-Ho-Q1l" userLabel="Q17 View Controller" sceneMemberID="viewController">
+                <viewController id="dMW-Ho-Q1l" userLabel="Q17 View Controller" customClass="Q17ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yh2-gP-6Zy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2235,7 +2241,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="gi0-AI-B1d" kind="presentation" identifier="next" id="Vaa-N8-RaT"/>
+                                    <segue destination="gi0-AI-B1d" kind="show" identifier="next" id="Vaa-N8-RaT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is another way of looking at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-dX-FzY">
@@ -2326,12 +2332,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqH-dx-ZfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15114.4" y="40.929535232383813"/>
+            <point key="canvasLocation" x="17274" y="41"/>
         </scene>
         <!--Q18 View Controller-->
         <scene sceneID="oTB-xO-aex">
             <objects>
-                <viewController id="gi0-AI-B1d" userLabel="Q18 View Controller" sceneMemberID="viewController">
+                <viewController id="gi0-AI-B1d" userLabel="Q18 View Controller" customClass="Q18ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hd3-LI-Fwf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2367,7 +2373,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="8Kg-dt-YAV" kind="presentation" id="YQ0-yH-P3a"/>
+                                    <segue destination="8Kg-dt-YAV" kind="show" id="YQ0-yH-P3a"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select all emotions that apply." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URT-cQ-X7R">
@@ -2504,12 +2510,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPq-MY-adu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15896.799999999999" y="39.130434782608695"/>
+            <point key="canvasLocation" x="18044" y="41"/>
         </scene>
         <!--Q19 View Controller-->
         <scene sceneID="zIl-yO-ICX">
             <objects>
-                <viewController id="8Kg-dt-YAV" userLabel="Q19 View Controller" sceneMemberID="viewController">
+                <viewController id="8Kg-dt-YAV" userLabel="Q19 View Controller" customClass="Q19ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LkW-bA-2Se">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2535,7 +2541,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="Xwr-ck-YFr" kind="presentation" id="1Aq-w1-Qpn"/>
+                                    <segue destination="Xwr-ck-YFr" kind="show" id="1Aq-w1-Qpn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How strongly did you feel each emotion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWU-ov-iod">
@@ -2571,12 +2577,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpb-p7-gYj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16741.599999999999" y="35.532233883058474"/>
+            <point key="canvasLocation" x="18802" y="41"/>
         </scene>
         <!--PostMood View Controller-->
         <scene sceneID="dYt-sG-90Y">
             <objects>
-                <viewController id="Xwr-ck-YFr" userLabel="PostMood View Controller" sceneMemberID="viewController">
+                <viewController id="Xwr-ck-YFr" userLabel="PostMood View Controller" customClass="PostMoodViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oi3-Wg-FAb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2594,7 +2600,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
-                                    <segue destination="asi-I8-Sje" kind="presentation" id="TlV-fV-0HH"/>
+                                    <segue destination="asi-I8-Sje" kind="show" id="TlV-fV-0HH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Nj-nxj">
@@ -2688,12 +2694,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WD-mE-ZJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17583.200000000001" y="35.532233883058474"/>
+            <point key="canvasLocation" x="19583" y="39"/>
         </scene>
         <!--End View Controller-->
         <scene sceneID="gEE-Ga-E8O">
             <objects>
-                <viewController id="asi-I8-Sje" userLabel="End View Controller" sceneMemberID="viewController">
+                <viewController id="asi-I8-Sje" userLabel="End View Controller" customClass="EndViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UkC-8i-AP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2790,7 +2796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RP-Ra-Ccf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18351.200000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="20340" y="41"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3PH-aQ-9rf">
@@ -2803,18 +2809,21 @@
                         <color key="barTintColor" red="0.36547911167144775" green="0.73133063316345215" blue="0.90590226650238037" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sgG-4H-0Ac">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="lKp-sK-09M" kind="relationship" relationship="rootViewController" id="DR1-pP-Y1U"/>
+                        <segue destination="lKp-sK-09M" kind="relationship" relationship="rootViewController" id="4Tz-rA-qiw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7l9-ZF-Cn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63.200000000000003" y="26.53673163418291"/>
+            <point key="canvasLocation" x="-164" y="32"/>
         </scene>
-        <!--Login View Controller-->
+        <!--SignUp View Controller-->
         <scene sceneID="erc-Xl-yij">
             <objects>
-                <viewController id="QLE-cy-EZ7" userLabel="Login View Controller" customClass="SignUpViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QLE-cy-EZ7" userLabel="SignUp View Controller" customClass="SignUpViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1y-3A-EFk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2826,11 +2835,12 @@
                                 <rect key="frame" x="16" y="371" width="343" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
-                                <state key="normal" title="Sign in">
+                                <state key="normal" title="Sign Up">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="QLE-cy-EZ7" eventType="touchUpInside" id="K8y-IC-Ws2"/>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="qKy-XX-7AG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FELICITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-L1-xdF">
@@ -2901,7 +2911,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adM-Yl-Qd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876" y="788"/>
+            <point key="canvasLocation" x="1388" y="32"/>
         </scene>
     </scenes>
     <resources>
@@ -2918,6 +2928,7 @@
         <image name="Tired" width="90" height="90"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="H2C-u5-edP"/>
         <segue reference="adA-9h-ZFA"/>
     </inferredMetricsTieBreakers>
 </document>

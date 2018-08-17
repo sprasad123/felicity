@@ -11,6 +11,24 @@
 		1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */; };
 		1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC521000A870008CBF6 /* CBTDefViewController.swift */; };
 		134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AE0B421139482000C0858 /* SignUpViewController.swift */; };
+		134F9962212474A800E10B6C /* Q6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9961212474A800E10B6C /* Q6ViewController.swift */; };
+		134F9964212474C900E10B6C /* Q7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9963212474C900E10B6C /* Q7ViewController.swift */; };
+		134F9966212474D900E10B6C /* Q8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9965212474D900E10B6C /* Q8ViewController.swift */; };
+		134F9968212474E700E10B6C /* Q9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9967212474E700E10B6C /* Q9ViewController.swift */; };
+		134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9969212474F500E10B6C /* Q10ViewController.swift */; };
+		134F996C2124750200E10B6C /* Q11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F996B2124750200E10B6C /* Q11ViewController.swift */; };
+		134F996E2124751600E10B6C /* Q12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F996D2124751500E10B6C /* Q12ViewController.swift */; };
+		134F99702124752D00E10B6C /* Q13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F996F2124752D00E10B6C /* Q13ViewController.swift */; };
+		134F99722124753800E10B6C /* Q14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99712124753800E10B6C /* Q14ViewController.swift */; };
+		134F99742124754300E10B6C /* Q15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99732124754300E10B6C /* Q15ViewController.swift */; };
+		134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99752124754F00E10B6C /* Q16ViewController.swift */; };
+		134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99772124755B00E10B6C /* Q17ViewController.swift */; };
+		134F997A2124756600E10B6C /* Q18ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99792124756600E10B6C /* Q18ViewController.swift */; };
+		134F997C2124757300E10B6C /* Q19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F997B2124757300E10B6C /* Q19ViewController.swift */; };
+		134F997E2124758800E10B6C /* PostMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F997D2124758800E10B6C /* PostMoodViewController.swift */; };
+		134F99802124759800E10B6C /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F997F2124759800E10B6C /* EndViewController.swift */; };
+		134F99822125073200E10B6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99812125073200E10B6C /* User.swift */; };
+		134F9984212513B900E10B6C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9983212513B900E10B6C /* Journal.swift */; };
 		138C305420898577006D4129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305320898577006D4129 /* AppDelegate.swift */; };
 		138C305620898577006D4129 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* SignInViewController.swift */; };
 		138C305920898577006D4129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305720898577006D4129 /* Main.storyboard */; };
@@ -46,6 +64,24 @@
 		1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogASessionViewController.swift; sourceTree = "<group>"; };
 		1327BCC521000A870008CBF6 /* CBTDefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDefViewController.swift; sourceTree = "<group>"; };
 		134AE0B421139482000C0858 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		134F9961212474A800E10B6C /* Q6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q6ViewController.swift; sourceTree = "<group>"; };
+		134F9963212474C900E10B6C /* Q7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q7ViewController.swift; sourceTree = "<group>"; };
+		134F9965212474D900E10B6C /* Q8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q8ViewController.swift; sourceTree = "<group>"; };
+		134F9967212474E700E10B6C /* Q9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q9ViewController.swift; sourceTree = "<group>"; };
+		134F9969212474F500E10B6C /* Q10ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q10ViewController.swift; sourceTree = "<group>"; };
+		134F996B2124750200E10B6C /* Q11ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q11ViewController.swift; sourceTree = "<group>"; };
+		134F996D2124751500E10B6C /* Q12ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q12ViewController.swift; sourceTree = "<group>"; };
+		134F996F2124752D00E10B6C /* Q13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q13ViewController.swift; sourceTree = "<group>"; };
+		134F99712124753800E10B6C /* Q14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q14ViewController.swift; sourceTree = "<group>"; };
+		134F99732124754300E10B6C /* Q15ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q15ViewController.swift; sourceTree = "<group>"; };
+		134F99752124754F00E10B6C /* Q16ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q16ViewController.swift; sourceTree = "<group>"; };
+		134F99772124755B00E10B6C /* Q17ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q17ViewController.swift; sourceTree = "<group>"; };
+		134F99792124756600E10B6C /* Q18ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q18ViewController.swift; sourceTree = "<group>"; };
+		134F997B2124757300E10B6C /* Q19ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q19ViewController.swift; sourceTree = "<group>"; };
+		134F997D2124758800E10B6C /* PostMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMoodViewController.swift; sourceTree = "<group>"; };
+		134F997F2124759800E10B6C /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		134F99812125073200E10B6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		134F9983212513B900E10B6C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +161,24 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				134F99812125073200E10B6C /* User.swift */,
+				134F9983212513B900E10B6C /* Journal.swift */,
+				134F9961212474A800E10B6C /* Q6ViewController.swift */,
+				134F9963212474C900E10B6C /* Q7ViewController.swift */,
+				134F9965212474D900E10B6C /* Q8ViewController.swift */,
+				134F9967212474E700E10B6C /* Q9ViewController.swift */,
+				134F9969212474F500E10B6C /* Q10ViewController.swift */,
+				134F996B2124750200E10B6C /* Q11ViewController.swift */,
+				134F996D2124751500E10B6C /* Q12ViewController.swift */,
+				134F996F2124752D00E10B6C /* Q13ViewController.swift */,
+				134F99712124753800E10B6C /* Q14ViewController.swift */,
+				134F99732124754300E10B6C /* Q15ViewController.swift */,
+				134F99752124754F00E10B6C /* Q16ViewController.swift */,
+				134F99772124755B00E10B6C /* Q17ViewController.swift */,
+				134F99792124756600E10B6C /* Q18ViewController.swift */,
+				134F997B2124757300E10B6C /* Q19ViewController.swift */,
+				134F997D2124758800E10B6C /* PostMoodViewController.swift */,
+				134F997F2124759800E10B6C /* EndViewController.swift */,
 				134AE0B421139482000C0858 /* SignUpViewController.swift */,
 				1327BCC521000A870008CBF6 /* CBTDefViewController.swift */,
 				1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */,
@@ -422,8 +476,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */,
+				134F997C2124757300E10B6C /* Q19ViewController.swift in Sources */,
+				134F996E2124751600E10B6C /* Q12ViewController.swift in Sources */,
+				134F99802124759800E10B6C /* EndViewController.swift in Sources */,
+				134F996C2124750200E10B6C /* Q11ViewController.swift in Sources */,
+				134F9966212474D900E10B6C /* Q8ViewController.swift in Sources */,
+				134F9968212474E700E10B6C /* Q9ViewController.swift in Sources */,
+				134F99702124752D00E10B6C /* Q13ViewController.swift in Sources */,
 				138C305620898577006D4129 /* SignInViewController.swift in Sources */,
+				134F99722124753800E10B6C /* Q14ViewController.swift in Sources */,
+				134F99822125073200E10B6C /* User.swift in Sources */,
+				134F9964212474C900E10B6C /* Q7ViewController.swift in Sources */,
+				134F997A2124756600E10B6C /* Q18ViewController.swift in Sources */,
+				134F997E2124758800E10B6C /* PostMoodViewController.swift in Sources */,
+				134F9984212513B900E10B6C /* Journal.swift in Sources */,
+				134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */,
+				134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */,
+				134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */,
+				134F99742124754300E10B6C /* Q15ViewController.swift in Sources */,
 				1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */,
+				134F9962212474A800E10B6C /* Q6ViewController.swift in Sources */,
 				138C305420898577006D4129 /* AppDelegate.swift in Sources */,
 				134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */,
 			);

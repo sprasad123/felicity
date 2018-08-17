@@ -17,6 +17,9 @@ class SignUpViewController: UIViewController {
 
     @IBOutlet weak var emailLogin: UITextField!
     @IBOutlet weak var passwordLogin: UITextField!
+    //var ref = Database.database().reference()
+    
+    var ref : DatabaseReference!
     
     @IBAction func signUp(_ sender: Any) {
         if let email = emailLogin.text, let password = passwordLogin.text {        // makes sure email isn't empty
@@ -38,6 +41,14 @@ class SignUpViewController: UIViewController {
                 self.showAlert()
                 return
             }
+            self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])   // random ID
+            
+            let user = User()
+            
+            
+            user.userid = Auth.auth().currentUser?.uid
+            
+            User.current = user
             // User is signed in
             //
             self.goToMainVC()
@@ -46,6 +57,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref =  Database.database().reference()
         self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "GreenBackground"))!)
     }
     
@@ -63,6 +75,7 @@ class SignUpViewController: UIViewController {
     @objc func goToMainVC() {
         
         //Put segue code here, In here go to next VC by calling your segue or doing it programattically
+        User.setCurrentUser()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let LogASessionVC = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController") as! LogASessionViewController
         self.dismiss(animated: true, completion: nil)

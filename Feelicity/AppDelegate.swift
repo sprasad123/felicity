@@ -10,16 +10,20 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FBSDKCoreKit
+import Foundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
+    var ref: DatabaseReference!
+   // var ref = Database.database().reference()
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Use Firebase library to configure APIs
+        
         FirebaseApp.configure()
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -64,6 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             // User is signed in
             // ...
+        self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": user.profile.email])
             NotificationCenter.default.post(name: Notification.Name(rawValue: "googleSignInSucceeded"), object: nil)
         }
     }
@@ -93,6 +98,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        guard let currentJournal = Journal.current else { return }  // if journal is empty then return else set journal
+        UserDefaults.standard.set(currentJournal, forKey:"currentJournal")
+        
     }
 
 
