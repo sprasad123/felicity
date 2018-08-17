@@ -12,6 +12,9 @@ import Firebase
 
 class Q19ViewController: UIViewController {
     
-    
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 23
+        
+    }
     
 }

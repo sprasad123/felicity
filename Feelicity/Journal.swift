@@ -12,13 +12,17 @@ import Firebase
 class Journal: NSObject {
     
     
-    static var current:Journal?
+    static var current: Journal?
     
-    // vars for all firebase stuff
+    var behavior: String?
     
-    var behavior:String?
+    var currentPage: Int = 0
     
-    var currentPage:Int = 0
+    // vars for all database storage
+    var situationDescription1: Int
+    var emoji: String
+    var situationDescription2: String
+    var 
     
     static func setCurrentJournal() {
         let journal = Journal()

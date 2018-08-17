@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+import Firebase
+import FirebaseDatabase
+
+class Q6ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 10
+    }
+
+}

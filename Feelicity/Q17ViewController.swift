@@ -15,6 +15,9 @@ import FBSDKLoginKit
 
 class Q17ViewController: UIViewController {
     
-    
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 21
+        
+    }
     
 }

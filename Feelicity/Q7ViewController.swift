@@ -19,6 +19,7 @@ class Q7ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Journal.current?.currentPage = 11
         ref = Database.database().reference()
     }
     

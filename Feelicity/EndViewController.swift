@@ -15,6 +15,11 @@ import FBSDKLoginKit
 
 class EndViewController: UIViewController {
     
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 25
+        
+    }
+    
     func submitToFirebase () {
         // write to firebase
         

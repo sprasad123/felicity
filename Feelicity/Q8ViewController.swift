@@ -14,7 +14,10 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class Q8ViewController: UIViewController {
-
-
+        
+    override func viewDidLoad() {
+        Journal.current?.currentPage = 12
+        
+    }
 
 }
