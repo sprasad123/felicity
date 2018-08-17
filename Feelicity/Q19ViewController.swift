@@ -9,9 +9,6 @@
 import Foundation
 import UIKit
 import Firebase
-import GoogleSignIn
-import FBSDKCoreKit
-import FBSDKLoginKit
 
 class Q19ViewController: UIViewController {
     

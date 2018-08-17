@@ -12,13 +12,13 @@ import Firebase
 import FirebaseDatabase
 
 class PreMoodViewController: UIViewController {
-    Journal.current?.currentPage = 1
     @IBOutlet weak var PreMoodSlider: UISlider!
     
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Journal.current?.currentPage = 1
         ref = Database.database().reference()
     }
     

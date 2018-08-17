@@ -23,7 +23,7 @@ class Q7ViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
-        ref?.child("Journal").childByAutoId().setValue(["user":Auth.auth().currentUser!])
+        ref?.child("Journal").childByAutoId().setValue(["user" : Auth.auth().currentUser!.uid])
 //        ref?.child("Users").child(user.uid.setValue(text1.text)
         ref?.child("BehaviorFeeling").childByAutoId().setValue(text2.text)
     }
