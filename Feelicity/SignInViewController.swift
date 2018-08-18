@@ -13,6 +13,28 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
+    var ref: DatabaseReference!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ref = Database.database().reference()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        facebookLogin.delegate = self
+        facebookLogin.readPermissions = [ "public_profile" ]
+        
+        if let accessToken = FBSDKAccessToken.current() {
+            // User is logged in, use 'accessToken' here.
+            goToMainVC()
+        }
+        //loginButton = LoginButton(readPermissions: [ .publicProfile, .Email, .UserFriends ])
+        
+        //GIDSignIn.sharedInstance().signIn()
+        // TODO(developer) Configure the sign-in button look/feel
+        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "GreenBackground"))!)
+    }
+    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if let error = error {
             //
@@ -28,6 +50,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
             }
             // User is signed in
             //
+            self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": result])
             self.goToMainVC()
         }
     }
@@ -80,28 +103,9 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                 return
             }
             // User is signed in
-            
+            self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
             self.goToMainVC()
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        GIDSignIn.sharedInstance().uiDelegate = self
-        
-        facebookLogin.delegate = self
-        facebookLogin.readPermissions = [ "public_profile" ]
-        
-        if let accessToken = FBSDKAccessToken.current() {
-            // User is logged in, use 'accessToken' here.
-            goToMainVC()
-        }
-        //loginButton = LoginButton(readPermissions: [ .publicProfile, .Email, .UserFriends ])
-        
-        //GIDSignIn.sharedInstance().signIn()
-        // TODO(developer) Configure the sign-in button look/feel
-        // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "GreenBackground"))!)
     }
 
     override func didReceiveMemoryWarning() {

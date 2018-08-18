@@ -26,6 +26,9 @@
                                 <rect key="frame" x="16" y="371" width="343" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qTm-CV-qDG"/>
+                                </constraints>
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -33,8 +36,8 @@
                                     <action selector="emailLogin:" destination="lKp-sK-09M" eventType="touchUpInside" id="9ez-pZ-Oqw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-a6-h8o">
-                                <rect key="frame" x="64" y="405" width="179" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-a6-h8o">
+                                <rect key="frame" x="64" y="429" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -47,12 +50,18 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-0q-5MO">
                                 <rect key="frame" x="16" y="270" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="72n-FY-mVY"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-XZ-kV7">
                                 <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bQf-Un-Itm"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -62,16 +71,11 @@
                                 <state key="normal" image="Sun"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-hG-en7" customClass="GIDSignInButton">
-                                <rect key="frame" x="16" y="454" width="343" height="15"/>
+                                <rect key="frame" x="16" y="475" width="343" height="15"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-bz-B9n" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="16" y="477" width="343" height="103"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-7t-DRA">
-                                <rect key="frame" x="247" y="401" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-7t-DRA">
+                                <rect key="frame" x="256" y="424" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -79,41 +83,52 @@
                                     <segue destination="QLE-cy-EZ7" kind="show" identifier="signUpFrame" id="Rdd-Dc-Hbq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-bz-B9n" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="21" y="507" width="333" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="0mh-iz-knj"/>
-                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="24" id="2pM-q4-Ldm"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="3MZ-O5-kzg"/>
                             <constraint firstItem="41h-QB-89n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" id="4Xy-8h-LbM"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="7SF-33-A9Z"/>
                             <constraint firstItem="aiK-hG-en7" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="7dy-Vd-LcT"/>
                             <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="aiK-hG-en7" secondAttribute="trailing" constant="16" id="82l-zy-kl2"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="bottom" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="87" id="AaZ-BS-jhC"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="8r5-Tf-f1l"/>
+                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="tXf-7t-DRA" secondAttribute="bottom" constant="21" id="A6N-ON-T0N"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="centerX" secondItem="Jqb-0q-5MO" secondAttribute="centerX" id="BVH-qG-wun"/>
-                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="LbQ-a6-h8o" secondAttribute="bottom" constant="8" symbolic="YES" id="CIG-ak-yGV"/>
+                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="64" id="Bll-28-Xis"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="CTk-ED-tbR"/>
+                            <constraint firstItem="tXf-7t-DRA" firstAttribute="leading" secondItem="LbQ-a6-h8o" secondAttribute="trailing" constant="13" id="CeM-Vm-PgZ"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="DnP-8M-D3P"/>
                             <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="yDG-jw-dSh" secondAttribute="trailing" constant="97" id="E6U-Tc-S1l"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="EB0-0u-6yT"/>
                             <constraint firstItem="41h-QB-89n" firstAttribute="top" secondItem="OcR-V3-n0O" secondAttribute="top" id="Jdt-4K-AEp"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="16" id="Lxn-dM-pVg"/>
+                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="LbQ-a6-h8o" secondAttribute="bottom" constant="25" id="KI7-gh-FqN"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="centerX" secondItem="yDG-jw-dSh" secondAttribute="centerX" id="NsH-au-fil"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="96" id="O6b-xR-4Ki"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="OkW-dc-vS8"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="Sb2-S7-zfj"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="tXf-7t-DRA" secondAttribute="trailing" constant="64" id="XP0-Oj-EUm"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="e6n-mk-1Oa" secondAttribute="top" constant="507" id="Y2A-Eo-VqM"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="centerX" secondItem="Ibg-hm-ECR" secondAttribute="centerX" id="Z3u-Pf-YO9"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="aiK-hG-en7" secondAttribute="bottom" constant="8" id="ZVX-4Q-bvJ"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="e6n-mk-1Oa" secondAttribute="top" constant="477" id="aIm-0j-mck"/>
                             <constraint firstItem="Ibg-hm-ECR" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="aqX-fj-t4A"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="top" secondItem="fhT-XZ-kV7" secondAttribute="bottom" constant="23" id="dCH-Kt-Byw"/>
-                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="centerX" secondItem="31A-1m-vGj" secondAttribute="centerX" id="f0t-gz-t5a"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="fQM-N1-cIf"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="top" secondItem="yDG-jw-dSh" secondAttribute="bottom" constant="27" id="faU-8x-oIA"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="fx0-Z0-eM4"/>
                             <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="41h-QB-89n" secondAttribute="trailing" id="gpE-qb-m4Z"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="aiK-hG-en7" secondAttribute="bottom" constant="17" id="i7j-xf-YOk"/>
                             <constraint firstItem="Ibg-hm-ECR" firstAttribute="top" secondItem="OcR-V3-n0O" secondAttribute="top" constant="26" id="ipI-b5-Pa9"/>
+                            <constraint firstItem="tXf-7t-DRA" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="23" id="j7L-i4-V0Q"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="jyp-nf-5Aq"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="top" secondItem="Ibg-hm-ECR" secondAttribute="bottom" constant="21" id="kEz-ew-4mW"/>
                             <constraint firstAttribute="bottomMargin" secondItem="41h-QB-89n" secondAttribute="bottom" id="kht-1m-vr5"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="centerX" secondItem="fhT-XZ-kV7" secondAttribute="centerX" id="l2x-MW-C84"/>
-                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="lHI-f4-c62"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="l40-Jc-s2N"/>
+                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="28" id="oa1-hn-StO"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="bottom" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="120" id="wwF-r7-4Yn"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="top" secondItem="Jqb-0q-5MO" secondAttribute="bottom" constant="18" id="z8h-LO-riw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OcR-V3-n0O"/>
@@ -128,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-wF-SGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="32"/>
+            <point key="canvasLocation" x="597.60000000000002" y="31.934032983508249"/>
         </scene>
         <!--LogASession View Controller-->
         <scene sceneID="6y5-vb-Mij">
@@ -1820,6 +1835,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="submit:" destination="dST-QR-9L8" eventType="touchUpInside" id="6Am-UI-gVo"/>
                                     <segue destination="M2D-wH-D4P" kind="show" id="bvM-Hq-FsE"/>
                                 </connections>
                             </button>
@@ -1928,6 +1944,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXc-y2-i9v">
+                                <rect key="frame" x="5" y="556" width="102" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="FAQ Icon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="definitionPopup:" destination="dST-QR-9L8" eventType="touchUpInside" id="gR4-K7-32h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2485,13 +2511,16 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-Ci-j0Y">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-Ci-j0Y">
                                 <rect key="frame" x="71" y="130" width="46" height="33"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Anger">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="angerClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="2H0-Il-2C2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6E-5B-VtF">
                                 <rect key="frame" x="210" y="130" width="118" height="33"/>
@@ -2500,6 +2529,9 @@
                                 <state key="normal" title="Hopelessness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="hopelessnessClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="bkd-eY-369"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qee-sz-ffE">
                                 <rect key="frame" x="57" y="192" width="80" height="33"/>
@@ -2508,6 +2540,9 @@
                                 <state key="normal" title="Emptiness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="emptinessClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="Zcp-NJ-kLO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQq-ix-pIW">
                                 <rect key="frame" x="204" y="192" width="124" height="33"/>
@@ -2516,6 +2551,9 @@
                                 <state key="normal" title="Worthlessness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="worthlessnessClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="ce1-wq-e9a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZv-zk-nug">
                                 <rect key="frame" x="78" y="258" width="36" height="33"/>
@@ -2524,6 +2562,9 @@
                                 <state key="normal" title="Guilt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="guiltClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="lB3-s4-kYj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWL-fG-rWB">
                                 <rect key="frame" x="220" y="258" width="99" height="33"/>
@@ -2532,6 +2573,9 @@
                                 <state key="normal" title="Frustration">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="frustrationClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="IgY-0Q-Xqh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rae-qc-JcA">
                                 <rect key="frame" x="67" y="327" width="53" height="33"/>
@@ -2540,6 +2584,9 @@
                                 <state key="normal" title="Shame">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shameClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="KWZ-c3-g4G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx6-Mi-BTm">
                                 <rect key="frame" x="58" y="390" width="72" height="33"/>
@@ -2548,6 +2595,9 @@
                                 <state key="normal" title="Lethargic">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="lethargicClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="ro2-PI-sSg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gog-Jp-plw">
                                 <rect key="frame" x="147" y="458" width="81" height="33"/>
@@ -2556,6 +2606,9 @@
                                 <state key="normal" title="Sensitive">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="sensitiveClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="Lhw-tq-btX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzs-KR-SaA">
                                 <rect key="frame" x="234" y="327" width="64" height="33"/>
@@ -2564,6 +2617,9 @@
                                 <state key="normal" title="Irritation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="irritationClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="99I-rG-fo2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUn-OI-STB">
                                 <rect key="frame" x="225" y="390" width="82" height="33"/>
@@ -2572,6 +2628,9 @@
                                 <state key="normal" title="Vulnerable">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="vulnerableClicked:" destination="gi0-AI-B1d" eventType="touchUpInside" id="2jc-6U-6oL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2626,6 +2685,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gJ1-ec-eUz"/>
                     </view>
+                    <connections>
+                        <outlet property="angry" destination="mX9-Ci-j0Y" id="czO-Up-BNb"/>
+                        <outlet property="emptiness" destination="qee-sz-ffE" id="8GH-lU-Cwm"/>
+                        <outlet property="frustration" destination="bWL-fG-rWB" id="LVc-bo-de0"/>
+                        <outlet property="guilt" destination="xZv-zk-nug" id="Ab5-3H-IQO"/>
+                        <outlet property="hopelessness" destination="g6E-5B-VtF" id="YcM-td-m3v"/>
+                        <outlet property="irritation" destination="pzs-KR-SaA" id="o3A-18-jgp"/>
+                        <outlet property="lethargic" destination="Xx6-Mi-BTm" id="QqI-pB-Ia0"/>
+                        <outlet property="sensitive" destination="Gog-Jp-plw" id="Xcj-Y6-kQB"/>
+                        <outlet property="shame" destination="rae-qc-JcA" id="RNG-La-tBb"/>
+                        <outlet property="vulnerable" destination="AUn-OI-STB" id="mSZ-k5-964"/>
+                        <outlet property="worthlessness" destination="KQq-ix-pIW" id="BdP-Yo-5aV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPq-MY-adu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2722,42 +2794,42 @@
                                     <segue destination="asi-I8-Sje" kind="show" id="TlV-fV-0HH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Nj-nxj">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqp-Nj-nxj">
                                 <rect key="frame" x="68" y="100" width="90" height="90"/>
                                 <state key="normal" image="Loved"/>
                                 <connections>
                                     <action selector="LovedButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="B17-kn-SWw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMS-bA-9Vd">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMS-bA-9Vd">
                                 <rect key="frame" x="217" y="100" width="90" height="90"/>
                                 <state key="normal" image="Happy"/>
                                 <connections>
                                     <action selector="HappyButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="vIK-0p-iFo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-Qx-B1K">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxx-Qx-B1K">
                                 <rect key="frame" x="68" y="240" width="90" height="90"/>
                                 <state key="normal" image="Nervous"/>
                                 <connections>
                                     <action selector="NervousButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="wGh-Cd-FBA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XI6-CG-RoP">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XI6-CG-RoP">
                                 <rect key="frame" x="217" y="240" width="90" height="90"/>
                                 <state key="normal" image="Angry"/>
                                 <connections>
                                     <action selector="AngryButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="2pg-zY-GVZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-1w-D0P">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-1w-D0P">
                                 <rect key="frame" x="68" y="369" width="90" height="90"/>
                                 <state key="normal" image="Tired"/>
                                 <connections>
                                     <action selector="TiredButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="hUE-Ip-Cas"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW3-3o-n9k">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW3-3o-n9k">
                                 <rect key="frame" x="217" y="369" width="90" height="90"/>
                                 <state key="normal" image="Sad"/>
                                 <connections>
@@ -2837,12 +2909,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="2fV-s9-z7k"/>
                     <connections>
-                        <outlet property="AngryButton" destination="XI6-CG-RoP" id="xhn-u1-0N9"/>
-                        <outlet property="HappyButton" destination="yMS-bA-9Vd" id="ia3-Zl-jQ1"/>
-                        <outlet property="LovedButton" destination="Rqp-Nj-nxj" id="vcT-Ak-TbI"/>
-                        <outlet property="NervousButton" destination="Oxx-Qx-B1K" id="eAd-YB-beZ"/>
-                        <outlet property="SadButton" destination="HW3-3o-n9k" id="t8Q-yq-Fxv"/>
-                        <outlet property="TiredButton" destination="ja7-1w-D0P" id="rYE-v8-ZwD"/>
+                        <outlet property="angryButton" destination="XI6-CG-RoP" id="v0b-C4-4Cj"/>
+                        <outlet property="happyButton" destination="yMS-bA-9Vd" id="npP-hE-KBB"/>
+                        <outlet property="lovedButton" destination="Rqp-Nj-nxj" id="AgM-8Q-wXK"/>
+                        <outlet property="nervousButton" destination="Oxx-Qx-B1K" id="cwi-qC-HGY"/>
+                        <outlet property="sadButton" destination="HW3-3o-n9k" id="nic-Cl-R1f"/>
+                        <outlet property="tiredButton" destination="ja7-1w-D0P" id="eAk-yc-P88"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WD-mE-ZJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3079,6 +3151,7 @@
         <image name="Arrow" width="50" height="50"/>
         <image name="Background" width="1620" height="2880"/>
         <image name="Diagram" width="425" height="362"/>
+        <image name="FAQ Icon" width="102" height="102"/>
         <image name="Happy" width="90" height="90"/>
         <image name="LastPic" width="270" height="106"/>
         <image name="Loved" width="90" height="90"/>
@@ -3088,8 +3161,7 @@
         <image name="Tired" width="90" height="90"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TlV-fV-0HH"/>
-        <segue reference="o4w-li-vs1"/>
+        <segue reference="H2C-u5-edP"/>
         <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>

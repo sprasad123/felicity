@@ -32,9 +32,21 @@ class Q13ViewController: UIViewController {
     
     @IBOutlet weak var none: UISwitch!
     
+    
+    
     override func viewDidLoad() {
         Journal.current?.currentPage = 17
         
+    }
+    
+    @IBAction func definitionPopup(_ sender: Any) {
+        let alert = UIAlertController(title: "Definitions", message: "Black and White Thinking: definition \nOvergeneralizing: definition \nSelective Abstraction: definition \nMind Reading: definition \nPersonalizing: definition \nCatastrophizing: definition \nShould Statements: definition \nMinimizing: definition", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Got it", style: .default, handler: { action in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true)
     }
     
     @IBAction func submit(_ sender: Any) {
