@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
-import GoogleSignIn
-import FBSDKCoreKit
-import FBSDKLoginKit
+import FirebaseDatabase
 
 class PostMoodViewController: UIViewController {
     
@@ -20,4 +18,28 @@ class PostMoodViewController: UIViewController {
         
     }
     
+    @IBAction func LovedButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", loved"
+    }
+    
+    @IBAction func HappyButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", happy"
+    }
+    
+    @IBAction func NervousButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", nervous"
+    }
+    
+    @IBAction func AngryButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", angry"
+    }
+    
+    
+    @IBAction func TiredButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", tired"
+    }
+    
+    @IBAction func SadButton(_ sender: Any) {
+        Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", sad"
+    }
 }

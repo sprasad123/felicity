@@ -9,15 +9,32 @@
 import Foundation
 import UIKit
 import Firebase
-import GoogleSignIn
-import FBSDKCoreKit
-import FBSDKLoginKit
+import FirebaseDatabase
 
 class Q12ViewController: UIViewController {
+    
+    @IBOutlet weak var Yes: UISwitch!
+    @IBOutlet weak var No: UISwitch!
     
     override func viewDidLoad() {
         Journal.current?.currentPage = 16
         
+    }
+    
+    @IBAction func submit(_ sender: Any) {
+        
+        if Yes.isOn {
+            Journal.current?.isExcludingInfoYes = true
+        }
+        else {
+            Journal.current?.isExcludingInfoYes = false
+        }
+        if No.isOn {
+            Journal.current?.isExcludingInfoNo = true
+        }
+        else {
+            Journal.current?.isExcludingInfoNo = false
+        }
     }
     
 }

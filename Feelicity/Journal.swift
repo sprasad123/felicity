@@ -68,7 +68,8 @@ class Journal: NSObject {
     var factual: Bool = false
     var exaggeration: Bool = false
     
-    var isExcludingInfo: Bool = false
+    var isExcludingInfoYes: Bool = false
+    var isExcludingInfoNo: Bool = false
     
     var blackAndWhiteThinking: Bool = false
     var overgeneralizing: Bool = false

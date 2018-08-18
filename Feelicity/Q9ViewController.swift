@@ -9,14 +9,21 @@
 import Foundation
 import UIKit
 import Firebase
-import GoogleSignIn
-import FBSDKCoreKit
-import FBSDKLoginKit
+import FirebaseDatabase
 
 class Q9ViewController: UIViewController {
     
+    @IBOutlet weak var text1: UITextView!
+    @IBOutlet weak var text2: UITextView!
     override func viewDidLoad() {
         Journal.current?.currentPage = 13
+        
+    }
+    
+    @IBAction func submit(_ sender: Any) {
+        
+        Journal.current?.avoided = text1.text
+        Journal.current?.prosCons = text2.text
         
     }
     

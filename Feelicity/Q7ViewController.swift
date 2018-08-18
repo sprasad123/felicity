@@ -24,9 +24,13 @@ class Q7ViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
-        ref?.child("Journal").childByAutoId().setValue(["user" : Auth.auth().currentUser!.uid])
-//        ref?.child("Users").child(user.uid.setValue(text1.text)
-        ref?.child("BehaviorFeeling").childByAutoId().setValue(text2.text)
+        
+        //ref?.child("Journal").childByAutoId().setValue(["user" : Auth.auth().currentUser!.uid])
+        //ref?.child("Users").child(user.uid.setValue(text1.text)
+        //ref?.child("BehaviorFeeling").childByAutoId().setValue(text2.text)
+        Journal.current?.behavior = text1.text
+        Journal.current?.behaviorInfluence = text2.text
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
