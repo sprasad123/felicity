@@ -24,6 +24,9 @@ class PreMoodViewController: UIViewController {
     @IBOutlet weak var TiredButton: UIButton!
     @IBOutlet weak var SadButton: UIButton!
     
+    @IBAction func lovedbutton(_ sender: UIButton) {
+    }
+    
     var ref: DatabaseReference!
     
     override func viewDidLoad() {

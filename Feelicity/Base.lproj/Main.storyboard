@@ -395,6 +395,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-vN-Tls">
                                 <rect key="frame" x="50" y="174" width="90" height="90"/>
                                 <state key="normal" image="Loved"/>
+                                <connections>
+                                    <action selector="lovedbutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="WGs-3N-Pw0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXx-oE-iug">
                                 <rect key="frame" x="235" y="174" width="90" height="90"/>
