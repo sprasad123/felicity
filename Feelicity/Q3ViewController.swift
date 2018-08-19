@@ -19,8 +19,11 @@ class  Q3ViewController: UIViewController {
     //Outlet for Question 2
     @IBOutlet weak var Q3TextBox2: UITextView!
     
-    
-    
+    @IBAction func Submit(_ sender: Any) {
+        Journal.current?.stuckPoint1 = Q3TextBox.text
+        Journal.current?.stuckPoint2 = Q3TextBox2.text
+    }
+
     var ref: DatabaseReference!
     
     override func viewDidLoad() {

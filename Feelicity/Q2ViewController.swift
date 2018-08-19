@@ -16,6 +16,11 @@ class  Q2ViewController: UIViewController {
     //Outlet for Question 1
     @IBOutlet weak var Q2TextBox: UITextView!
     
+    @IBAction func Submit(_ sender: Any) {
+        Journal.current?.thoughtDescription1 = Q2TextBox.text
+    }
+    
+    
     
     var ref: DatabaseReference!
     

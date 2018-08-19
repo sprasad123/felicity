@@ -362,6 +362,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Submit:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="mMQ-tu-Ftd"/>
                                     <segue destination="4gD-w4-Kbs" kind="show" identifier="name" id="xJI-DT-wci"/>
                                 </connections>
                             </button>
@@ -392,32 +393,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-vN-Tls">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-vN-Tls">
                                 <rect key="frame" x="50" y="174" width="90" height="90"/>
                                 <state key="normal" image="Loved"/>
                                 <connections>
                                     <action selector="lovedbutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="WGs-3N-Pw0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXx-oE-iug">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXx-oE-iug">
                                 <rect key="frame" x="235" y="174" width="90" height="90"/>
                                 <state key="normal" image="Happy"/>
+                                <connections>
+                                    <action selector="happybutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="wFa-Sf-XAd"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u5-7a-oje">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2u5-7a-oje">
                                 <rect key="frame" x="50" y="298" width="90" height="90"/>
                                 <state key="normal" image="Nervous"/>
+                                <connections>
+                                    <action selector="nervousbutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="Fny-dy-LBr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-1z-bPO">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDP-1z-bPO">
                                 <rect key="frame" x="235" y="308" width="90" height="90"/>
                                 <state key="normal" image="Angry"/>
+                                <connections>
+                                    <action selector="angrybutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="KsH-tF-6zY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYG-gs-eyl">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYG-gs-eyl">
                                 <rect key="frame" x="50" y="406" width="90" height="90"/>
                                 <state key="normal" image="Tired"/>
+                                <connections>
+                                    <action selector="tiredbutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="Wob-8o-kbz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4Q-21-xSf">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4Q-21-xSf">
                                 <rect key="frame" x="235" y="416" width="90" height="90"/>
                                 <state key="normal" image="Sad"/>
+                                <connections>
+                                    <action selector="sadbutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="1c3-hR-ERH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l18-3p-Ii3">
                                 <rect key="frame" x="72" y="272" width="47" height="21"/>
@@ -588,6 +604,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="submit:" destination="4gD-w4-Kbs" eventType="touchUpInside" id="9Fm-FS-exO"/>
                                     <segue destination="0xB-cC-kKP" kind="show" id="vNF-sO-VHH"/>
                                 </connections>
                             </button>
@@ -718,6 +735,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Submit:" destination="0xB-cC-kKP" eventType="touchUpInside" id="b2o-NZ-a2s"/>
                                     <segue destination="Ggd-IF-gJg" kind="show" identifier="next" id="qQP-Ir-idP"/>
                                 </connections>
                             </button>
@@ -785,6 +803,7 @@
                                 <rect key="frame" x="305" y="537" width="50" height="50"/>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Submit:" destination="Ggd-IF-gJg" eventType="touchUpInside" id="0vt-Qp-Ygy"/>
                                     <segue destination="Fyn-Ms-PJn" kind="show" id="3mA-jc-tvx"/>
                                 </connections>
                             </button>
@@ -911,6 +930,9 @@
                                 <state key="normal" title="Anger">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsangerClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="epu-3U-V3x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-s0-TyU">
                                 <rect key="frame" x="212" y="124" width="114" height="34"/>
@@ -919,6 +941,9 @@
                                 <state key="normal" title="Hopelessness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelshopelessnessClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="FtS-vM-toc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARt-FI-2f3">
                                 <rect key="frame" x="38" y="178" width="84" height="34"/>
@@ -927,6 +952,9 @@
                                 <state key="normal" title="Emptiness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsemptinessClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="g8i-rY-s3Z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anG-pY-ncZ">
                                 <rect key="frame" x="201" y="178" width="120" height="34"/>
@@ -935,6 +963,9 @@
                                 <state key="normal" title="Worthlessness">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsworthlessnessClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="9I0-f8-ZS4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-hu-qiL">
                                 <rect key="frame" x="63" y="236" width="38" height="34"/>
@@ -943,6 +974,9 @@
                                 <state key="normal" title="Guilt">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsguiltClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="UzR-Uz-Q13"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhO-pp-Ae6">
                                 <rect key="frame" x="229" y="236" width="88" height="34"/>
@@ -951,6 +985,9 @@
                                 <state key="normal" title="Frustration">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsfrustrationClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="b9P-Dx-XWO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nc8-TY-C71">
                                 <rect key="frame" x="54" y="297" width="56" height="34"/>
@@ -959,6 +996,9 @@
                                 <state key="normal" title="Shame">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsshameClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="epH-Mk-Epf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-d2-xtt">
                                 <rect key="frame" x="236" y="297" width="68" height="34"/>
@@ -967,6 +1007,9 @@
                                 <state key="normal" title="Irritation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsirritationClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="njn-P8-Hr2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-g0-7S3">
                                 <rect key="frame" x="44" y="356" width="76" height="34"/>
@@ -975,6 +1018,9 @@
                                 <state key="normal" title="Lethargic">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelslethargicClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="KOE-3n-RbK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxH-DF-mtJ">
                                 <rect key="frame" x="232" y="356" width="82" height="33"/>
@@ -983,6 +1029,9 @@
                                 <state key="normal" title="Vulnerable">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelsvulnerableClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="Lzi-AQ-ITy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQd-SF-r2Z">
                                 <rect key="frame" x="144" y="414" width="86" height="33"/>
@@ -991,6 +1040,9 @@
                                 <state key="normal" title="Sensitive">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="feelssensitiveClicked:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="rVQ-OK-voM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

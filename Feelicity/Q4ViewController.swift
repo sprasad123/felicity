@@ -2,7 +2,7 @@
 //  Q4ViewController.swift
 //  Feelicity
 //
-//  Created by Sharan Kaur on 8/17/18.
+//  Created by Sharan Singh on 8/17/18.
 //  Copyright © 2018 Feelicity. All rights reserved.
 //
 
@@ -28,6 +28,71 @@ class  Q4ViewController: UIViewController {
     
     var ref: DatabaseReference!
     
+    @IBAction func feelsangerClicked(_ sender: UIButton) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsAnger = !currentJournal.feelsAnger
+        AngerButton.backgroundColor = currentJournal.feelsAnger ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelshopelessnessClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsHopelessness = !currentJournal.feelsHopelessness
+        HopelessnessButton.backgroundColor = currentJournal.feelsHopelessness ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsemptinessClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsEmptiness = !currentJournal.feelsEmptiness
+        EmptinessButton.backgroundColor = currentJournal.feelsEmptiness ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsworthlessnessClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsWorthlessness = !currentJournal.feelsWorthlessness
+        WorthlessnessButton.backgroundColor = currentJournal.feelsWorthlessness ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsguiltClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsGuilt = !currentJournal.feelsGuilt
+        GuiltButton.backgroundColor = currentJournal.feelsGuilt ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsfrustrationClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsFrustration = !currentJournal.feelsFrustration
+        FrustrationButton.backgroundColor = currentJournal.feelsFrustration ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsshameClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsShame = !currentJournal.feelsShame
+        ShameButton.backgroundColor = currentJournal.feelsShame ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsirritationClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsIrritation = !currentJournal.feelsIrritation
+        IrritationButton.backgroundColor = currentJournal.feelsIrritation ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelslethargicClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsLethargic = !currentJournal.feelsLethargic
+        LethargicButton.backgroundColor = currentJournal.feelsLethargic ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelsvulnerableClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsVulnerable = !currentJournal.feelsVulnerable
+        VulnerableButton.backgroundColor = currentJournal.feelsVulnerable ? UIColor.gray : UIColor.lightGray
+    }
+    
+    @IBAction func feelssensitiveClicked(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return} // safely unwrap journal
+        currentJournal.feelsSensitive = !currentJournal.feelsSensitive
+        SensitiveButton.backgroundColor = currentJournal.feelsSensitive ? UIColor.gray : UIColor.lightGray
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 8

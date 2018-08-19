@@ -28,7 +28,8 @@ class Journal: NSObject {
     var preSad: Bool = false
    // var preEmoji: String? = ""
     
-    var isFeelingNegativeEmotions: Bool = false
+    var isFeelingNegativeEmotionsYes: Bool = false
+    var isFeelingNegativeEmotionsNo: Bool = false
     var situationDescription2: String? = ""
     
     var thoughtDescription1: String? = ""
