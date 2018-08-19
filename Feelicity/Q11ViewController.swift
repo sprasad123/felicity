@@ -18,7 +18,10 @@ class Q11ViewController: UIViewController {
     @IBOutlet weak var isExaggeration: UISwitch!
     override func viewDidLoad() {
         Journal.current?.currentPage = 15
-        
+        var thought = UILabel(frame: CGRect(x: 12, y: 30, width: 350, height: 200))
+        thought.textAlignment = NSTextAlignment.center
+        thought.text = Journal.current?.situationDescription2
+        self.view.addSubview(thought)
     }
     
     

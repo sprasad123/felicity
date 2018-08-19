@@ -21,6 +21,8 @@ class Q10ViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func submit(_ sender: Any) {
         
         Journal.current?.thoughtAction = thoughtText.text
