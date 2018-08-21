@@ -20,20 +20,23 @@ class Q7ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 11
-        ref = Database.database().reference()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
     }
     
     @IBAction func submit(_ sender: Any) {
         
-        //ref?.child("Journal").childByAutoId().setValue(["user" : Auth.auth().currentUser!.uid])
-        //ref?.child("Users").child(user.uid.setValue(text1.text)
-        //ref?.child("BehaviorFeeling").childByAutoId().setValue(text2.text)
         Journal.current?.behavior = text1.text
         Journal.current?.behaviorInfluence = text2.text
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Journal.current.slider = slider.value to save
-    }
 }

@@ -22,12 +22,19 @@ class  Q2ViewController: UIViewController {
     
     
     
-    var ref: DatabaseReference!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 6
-        ref = Database.database().reference()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
     }
     
 }

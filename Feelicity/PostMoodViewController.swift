@@ -19,9 +19,20 @@ class PostMoodViewController: UIViewController {
     @IBOutlet weak var angryButton: UIButton!
     @IBOutlet weak var tiredButton: UIButton!
     @IBOutlet weak var sadButton: UIButton!
+    @IBOutlet weak var okbutton: UIButton!
+    
     override func viewDidLoad() {
         Journal.current?.currentPage = 24
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
         
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
     }
     
     @IBAction func LovedButton(_ sender: Any) {
@@ -61,7 +72,11 @@ class PostMoodViewController: UIViewController {
         currentJournal.postSad = !currentJournal.postSad
         sadButton.alpha = currentJournal.postSad ? 1.0 : 0.5
     }
-
     
-    // Journal.current?.postEmoji = (Journal.current?.postEmoji)! + ", sad"
+    @IBAction func OkayButton(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return}
+        currentJournal.postOkay = !currentJournal.postOkay
+        okbutton.alpha = currentJournal.postOkay ? 1.0 : 0.5
+    }
+    
 }

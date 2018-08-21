@@ -23,6 +23,7 @@ class PreMoodViewController: UIViewController {
     @IBOutlet weak var AngryButton: UIButton!
     @IBOutlet weak var TiredButton: UIButton!
     @IBOutlet weak var SadButton: UIButton!
+    @IBOutlet weak var OkayButton: UIButton!
     
     @IBAction func lovedbutton(_ sender: UIButton) {
         guard let currentJournal = Journal.current else {return}
@@ -66,18 +67,32 @@ class PreMoodViewController: UIViewController {
             1.0 : 0.5
     }
     
-    @IBAction func Submit(_ sender: Any) {
-       // guard let currentJournal = Journal.current else {return}
-        Journal.current?.situationDescription1 = Int(PreMoodSlider.value)
+    @IBAction func okaybutton(_ sender: Any) {
+        guard let currentJournal = Journal.current else {return}
+        currentJournal.preOkay = !currentJournal.preOkay;
+        OkayButton.alpha = currentJournal.preOkay ?
+            1.0 : 0.5
     }
     
+    @IBAction func Submit(_ sender: Any) {
+       // guard let currentJournal = Journal.current else {return}
+        Journal.current?.situationDescription1 = Int(PreMoodSlider.value * 100)
+    }
     
-    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 4
-        ref = Database.database().reference()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
     }
     
 }

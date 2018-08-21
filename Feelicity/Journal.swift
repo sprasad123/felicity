@@ -12,13 +12,12 @@ import FirebaseDatabase
 
 class Journal: NSObject {
     
-    
     static var current: Journal?
     
     var currentPage: Int = 0
     
     // database storage variables - empty space signifies the next frame
-    var situationDescription1: Int = 0
+    var situationDescription1: Int = 50
     
     var preLoved: Bool = false
     var preHappy: Bool = false
@@ -26,6 +25,7 @@ class Journal: NSObject {
     var preAngry: Bool = false
     var preTired: Bool = false
     var preSad: Bool = false
+    var preOkay: Bool = false
    // var preEmoji: String? = ""
     
     var isFeelingNegativeEmotionsYes: Bool = false
@@ -49,17 +49,17 @@ class Journal: NSObject {
     var feelsVulnerable: Bool = false
     var feelsSensitive: Bool = false
     
-    var angerPercentage1: Int = 0
-    var hopelessnessPercentage2: Int = 0
-    var emptinessPercentage3: Int = 0
-    var worthlessnessPercentage4: Int = 0
-    var guiltPercentage5: Int = 0
-    var frustrationPercentage6: Int = 0
-    var shamePercentage7: Int = 0
-    var irritationPercentage8: Int = 0
-    var lethargicPercentage9: Int = 0
-    var vulnerablePercentage10: Int = 0
-    var sensitivePercentage11: Int = 0
+    var angerPercentage1: Int = 50
+    var hopelessnessPercentage2: Int = 50
+    var emptinessPercentage3: Int = 50
+    var worthlessnessPercentage4: Int = 50
+    var guiltPercentage5: Int = 50
+    var frustrationPercentage6: Int = 50
+    var shamePercentage7: Int = 50
+    var irritationPercentage8: Int = 50
+    var lethargicPercentage9: Int = 50
+    var vulnerablePercentage10: Int = 50
+    var sensitivePercentage11: Int = 50
     
     var behavior: String? = ""
     var behaviorInfluence: String? = ""
@@ -70,8 +70,9 @@ class Journal: NSObject {
     var avoided: String? = ""
     var prosCons: String? = ""
     
-    var thoughtAction: String? = ""
-    var effect: String? = ""
+    var thoughts: [Thought] = [Thought]()
+//    var thoughtAction: String? = ""
+//    var effect: String? = ""
     
     var factual: Bool = false
     var exaggeration: Bool = false
@@ -96,10 +97,10 @@ class Journal: NSObject {
     var reshapeImage: String? = ""
     var positives: String? = ""
     
-    var believePreviousThought: Int = 0
+    var believePreviousThought: Int = 50
     
     var alternativeView: String? = ""
-    var alternativeBelief: Int = 0
+    var alternativeBelief: Int = 50
     
     var feelsAngerPost: Bool = false
     var feelsHopelessnessPost: Bool = false
@@ -113,17 +114,17 @@ class Journal: NSObject {
     var feelsVulnerablePost: Bool = false
     var feelsSensitivePost: Bool = false
     
-    var angerPercentageReview1: Int = 0
-    var hopelessnessPercentageReview2: Int = 0
-    var emptinessPercentageReview3: Int = 0
-    var worthlessnessPercentageReview4: Int = 0
-    var guiltPercentageReview5: Int = 0
-    var frustrationPercentageReview6: Int = 0
-    var shamePercentageReview7: Int = 0
-    var irritationPercentageReview8: Int = 0
-    var lethargicPercentageReview9: Int = 0
-    var vulnerablePercentageReview10: Int = 0
-    var sensitivePercentageReview11: Int = 0
+    var angerPercentageReview1: Int = 50
+    var hopelessnessPercentageReview2: Int = 50
+    var emptinessPercentageReview3: Int = 50
+    var worthlessnessPercentageReview4: Int = 50
+    var guiltPercentageReview5: Int = 50
+    var frustrationPercentageReview6: Int = 50
+    var shamePercentageReview7: Int = 50
+    var irritationPercentageReview8: Int = 50
+    var lethargicPercentageReview9: Int = 50
+    var vulnerablePercentageReview10: Int = 50
+    var sensitivePercentageReview11: Int = 50
     
     var postLoved: Bool = false
     var postHappy: Bool = false
@@ -131,6 +132,7 @@ class Journal: NSObject {
     var postAngry: Bool = false
     var postTired: Bool = false
     var postSad: Bool = false
+    var postOkay: Bool = false
 //    var postEmoji: String? = ""
     
     static func setCurrentJournal() {

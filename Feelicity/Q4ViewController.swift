@@ -26,7 +26,6 @@ class  Q4ViewController: UIViewController {
     @IBOutlet weak var VulnerableButton: UIButton!
     @IBOutlet weak var SensitiveButton: UIButton!
     
-    var ref: DatabaseReference!
     
     @IBAction func feelsangerClicked(_ sender: UIButton) {
         guard let currentJournal = Journal.current else {return} // safely unwrap journal
@@ -96,7 +95,16 @@ class  Q4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 8
-        ref = Database.database().reference()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
     }
     
 }

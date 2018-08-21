@@ -17,25 +17,105 @@ class EndViewController: UIViewController {
     
     var ref: DatabaseReference!
     
+    // No height constraint
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         Journal.current?.currentPage = 25
-        ref = Database.database().reference()
+        // 3
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
         
+        // 4
+        let image = UIImage(named: "SunIcon")
+        imageView.image = image
+        
+        // 5
+        navigationItem.titleView = imageView
+        ref = Database.database().reference()
+    
+        // Print problematic pattern of behavior
+    //    var problematicPatterns = UILabel(frame: CGRect(x: 0, y: 50, width: 350, height: 300))
+        //counter for number of lines needed in label
+        label.textAlignment = NSTextAlignment.center
+        var counter: Int = 0
+        if (Journal.current?.blackAndWhiteThinking)! {
+            label.text = "Black and White Thinking"
+            counter+=1
+        }
+        if (Journal.current?.overgeneralizing)! {
+            label.text = label.text! + "\nOvergeneralizing"
+            counter+=1
+        }
+        if (Journal.current?.selectiveAbstraction)! {
+            label.text = label.text! + "\nSelective Abstraction"
+            counter+=1
+        }
+        if (Journal.current?.mindReading)! {
+            label.text = label.text! + "\nMind Reading"
+            counter+=1
+        }
+        if (Journal.current?.personalizing)! {
+            label.text =  label.text! + "\nPersonalizing"
+            counter+=1
+        }
+        if (Journal.current?.catastrophizing)! {
+            label.text = label.text! + "\nCatastrophizing"
+            counter+=1
+        }
+        if (Journal.current?.shouldStatements)! {
+            label.text = label.text! + "\nShould Statements"
+            counter+=1
+        }
+        if (Journal.current?.minimizing)! {
+            label.text = label.text! + "\nMinimizing"
+            counter+=1
+        }
+        if (Journal.current?.noneOfTheAbove)! {
+            label.text = label.text! + "\nNone of the above"
+            counter+=1
+        }
+        
+    //    problematicPatterns.numberOfLines = counter
+
+    //    self.view.addSubview(label)
+        
+        self.submitToFirebase()
+    }
+    
+    func getStringFromDate(format:String) -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = format //If you dont want static "UTC" you can go for ZZZZ instead of 'UTC'Z.
+        formatter.timeZone = TimeZone(abbreviation: "PST")
+        return formatter.string(from: date)
     }
     
     func submitToFirebase () {
+        // Thoughts Dictionary
+        var thoughtsDictionary: [String:Any] = [:]
+        for (index,thought) in (Journal.current?.thoughts)!.enumerated() {
+            var thoughtDictionary: [String:String] = [:]
+            thoughtDictionary["Thought"] = thought.thought
+            thoughtDictionary["Effect"] = thought.effect
+            thoughtsDictionary["Thought\(index + 1)"] = thoughtDictionary
+        }
+        
         // write to firebase
         
         let key = Auth.auth().currentUser!.uid
         let journal = ["User": key,
-                       "Timestamp": "timestamp",
-                       "Date": "date",
+                       "Timestamp": getStringFromDate(format: "MMMM dd, yyyy 'at' hh:mm:ss a 'UTC'Z"),
+                       "Date": getStringFromDate(format: "MMMM dd, yyyy"),
+                       "DateAsSeconds": Date().timeIntervalSince1970,
+                       "Situationdescription1": (Journal.current?.situationDescription1)! as Int,
                        "PreLoved": (Journal.current?.preLoved)! as Bool,
                        "PreHappy": (Journal.current?.preHappy)! as Bool,
                        "PreNervous": (Journal.current?.preNervous)! as Bool,
                        "PreAngry": (Journal.current?.preAngry)! as Bool,
                        "PreTired": (Journal.current?.preTired)! as Bool,
                        "PreSad": (Journal.current?.preSad)! as Bool,
+                       "PreOkay": (Journal.current?.preOkay)! as Bool,
                        "IsFeelingNegativeEmotionsYes": (Journal.current?.isFeelingNegativeEmotionsYes)! as Bool,
                        "IsFeelingNegativeEmotionsNo": (Journal.current?.isFeelingNegativeEmotionsNo)! as Bool,
                        "SituationDescription2": (Journal.current?.situationDescription2)! as String,
@@ -70,8 +150,7 @@ class EndViewController: UIViewController {
                        "alternativeCoping": (Journal.current?.alternativeCoping)! as String,
                        "avoided": (Journal.current?.avoided)! as String,
                        "prosCons": (Journal.current?.prosCons)! as String,
-                       "thoughtAction": (Journal.current?.thoughtAction)! as String,
-                       "effect": (Journal.current?.effect)! as String,
+                       "thoughtsAndActions": thoughtsDictionary ,
                        "factual": (Journal.current?.factual)! as Bool,
                        "exaggeration": (Journal.current?.exaggeration)! as Bool,
                        "isExcludingInfoYes": (Journal.current?.isExcludingInfoYes)! as Bool,
@@ -120,23 +199,22 @@ class EndViewController: UIViewController {
                        "PostNervous": (Journal.current?.postNervous)! as Bool,
                        "PostAngry": (Journal.current?.postAngry)! as Bool,
                        "PostTired": (Journal.current?.postTired)! as Bool,
-                       "PostSad": (Journal.current?.postSad)! as Bool] as [String : Any]
+                       "PostSad": (Journal.current?.postSad)! as Bool,
+                       "PostOkay": (Journal.current?.postOkay)! as Bool] as [String : Any]
         
-    //    let user = []
-    //    ref?.child("Users").child(key).setValue()
-        ref?.child("Journal").childByAutoId().setValue(journal)
-        //Auth.auth().currentUser!.uid
-        //ref?.child("Journal").childByAutoId().setValue(["user" : Auth.auth().currentUser!.uid])
-        //ref?.child("Users").child(user.uid).setValue(text1.text)
-        //ref?.child("BehaviorFeeling").childByAutoId().setValue(text2.text)
+        let id = UUID().uuidString
+        ref?.child("Journal").child(id).setValue(journal, withCompletionBlock: { (error, snapshot) in
+            self.ref?.child("Users").child(key).child("Journal").child(journal["Date"] as! String).updateChildValues([id: journal["Timestamp"]])
+            
+        })
         
         // reset app
         Journal.current = nil
         UserDefaults.standard.set(nil, forKey: "currentJournal")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    /*    let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let SignInVC = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
         let LogASessionVC = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController") as! LogASessionViewController
-        self.navigationController?.setViewControllers([SignInVC, LogASessionVC], animated: true)    // signInVC is behind logasessionvc
+        self.navigationController?.setViewControllers([SignInVC, LogASessionVC], animated: true)    // signInVC is behind logasessionvc */
     }
     
 }

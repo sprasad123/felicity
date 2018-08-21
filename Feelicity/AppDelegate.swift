@@ -32,8 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
-        let db = Database.database().reference()
-        db.setValue("Hello Firebase")
+        ref = Database.database().reference()
         return true
     }
     
@@ -68,8 +67,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             // User is signed in
             // ...
-   //     self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": user.profile.email])
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "googleSignInSucceeded"), object: nil)
+            if let uid = authResult?.user.uid {
+                self.ref.child("Users").child(uid).setValue(["email": user.profile.email])
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "googleSignInSucceeded"), object: nil)
+            }
+            else {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "googleSignInFailed"), object: nil)
+                return
+            }
         }
     }
     

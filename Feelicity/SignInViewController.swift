@@ -50,7 +50,16 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
             }
             // User is signed in
             //
-            self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": result])
+            
+            // result from FB
+            var email = ""
+            if let data = result as? [String:Any] {
+                if let unwrappedEmail = data["email"] as? String {
+                    email = unwrappedEmail
+                }
+            }
+            self.ref?.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
+            
             self.goToMainVC()
         }
     }
@@ -103,7 +112,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                 return
             }
             // User is signed in
-            self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
+       //     self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
             self.goToMainVC()
         }
     }

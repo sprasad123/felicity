@@ -29,6 +29,7 @@
 		134F99802124759800E10B6C /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F997F2124759800E10B6C /* EndViewController.swift */; };
 		134F99822125073200E10B6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F99812125073200E10B6C /* User.swift */; };
 		134F9984212513B900E10B6C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9983212513B900E10B6C /* Journal.swift */; };
+		135C7330212B3372001FEAA2 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C732F212B3372001FEAA2 /* Thought.swift */; };
 		1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */; };
 		138C305420898577006D4129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305320898577006D4129 /* AppDelegate.swift */; };
 		138C305620898577006D4129 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* SignInViewController.swift */; };
@@ -37,6 +38,9 @@
 		138C305E20898579006D4129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305C20898579006D4129 /* LaunchScreen.storyboard */; };
 		138C306920898579006D4129 /* FeelicityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C306820898579006D4129 /* FeelicityTests.swift */; };
 		138C307420898579006D4129 /* FeelicityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C307320898579006D4129 /* FeelicityUITests.swift */; };
+		13919A042129EB7E009493ED /* emotionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13919A032129EB7E009493ED /* emotionsCell.swift */; };
+		13919A062129EDA9009493ED /* Emotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13919A052129EDA9009493ED /* Emotions.swift */; };
+		13919A08212A4017009493ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13919A07212A4017009493ED /* ViewController.swift */; };
 		337E71F27B9BA5BB78FFD533 /* Pods_Feelicity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */; };
 		33D706AC64151B5E43B82044 /* Pods_FeelicityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD96EDB7D34BB097FA7D336D /* Pods_FeelicityUITests.framework */; };
 		D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8351D212752C500225736 /* PreMoodViewController.swift */; };
@@ -89,6 +93,7 @@
 		134F997F2124759800E10B6C /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		134F99812125073200E10B6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		134F9983212513B900E10B6C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		135C732F212B3372001FEAA2 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDiagramViewController.swift; sourceTree = "<group>"; };
 		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +108,9 @@
 		138C306F20898579006D4129 /* FeelicityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelicityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C307320898579006D4129 /* FeelicityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelicityUITests.swift; sourceTree = "<group>"; };
 		138C307520898579006D4129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13919A032129EB7E009493ED /* emotionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionsCell.swift; sourceTree = "<group>"; };
+		13919A052129EDA9009493ED /* Emotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotions.swift; sourceTree = "<group>"; };
+		13919A07212A4017009493ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1879F8FD42C5802E621C343E /* Pods-FeelicityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityTests/Pods-FeelicityTests.release.xcconfig"; sourceTree = "<group>"; };
 		40B1EF7E0305471429A9BAA8 /* Pods-FeelicityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelicityUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeelicityUITests/Pods-FeelicityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		75C30687E9CF337D69D524F2 /* Pods-Feelicity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feelicity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feelicity/Pods-Feelicity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +183,8 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				13919A07212A4017009493ED /* ViewController.swift */,
+				13919A032129EB7E009493ED /* emotionsCell.swift */,
 				1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */,
 				134F99812125073200E10B6C /* User.swift */,
 				134F9983212513B900E10B6C /* Journal.swift */,
@@ -198,6 +208,8 @@
 				134F99772124755B00E10B6C /* Q17ViewController.swift */,
 				134F99792124756600E10B6C /* Q18ViewController.swift */,
 				134F997B2124757300E10B6C /* Q19ViewController.swift */,
+				13919A052129EDA9009493ED /* Emotions.swift */,
+				135C732F212B3372001FEAA2 /* Thought.swift */,
 				134F997D2124758800E10B6C /* PostMoodViewController.swift */,
 				134F997F2124759800E10B6C /* EndViewController.swift */,
 				134AE0B421139482000C0858 /* SignUpViewController.swift */,
@@ -501,6 +513,7 @@
 				134F997C2124757300E10B6C /* Q19ViewController.swift in Sources */,
 				134F996E2124751600E10B6C /* Q12ViewController.swift in Sources */,
 				D4D8351E212752C500225736 /* PreMoodViewController.swift in Sources */,
+				135C7330212B3372001FEAA2 /* Thought.swift in Sources */,
 				134F99802124759800E10B6C /* EndViewController.swift in Sources */,
 				134F996C2124750200E10B6C /* Q11ViewController.swift in Sources */,
 				134F9966212474D900E10B6C /* Q8ViewController.swift in Sources */,
@@ -509,7 +522,9 @@
 				138C305620898577006D4129 /* SignInViewController.swift in Sources */,
 				134F99722124753800E10B6C /* Q14ViewController.swift in Sources */,
 				D4D83522212789AD00225736 /* Q1ViewController.swift in Sources */,
+				13919A042129EB7E009493ED /* emotionsCell.swift in Sources */,
 				134F99822125073200E10B6C /* User.swift in Sources */,
+				13919A08212A4017009493ED /* ViewController.swift in Sources */,
 				134F9964212474C900E10B6C /* Q7ViewController.swift in Sources */,
 				134F997A2124756600E10B6C /* Q18ViewController.swift in Sources */,
 				134F997E2124758800E10B6C /* PostMoodViewController.swift in Sources */,
@@ -518,6 +533,7 @@
 				134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */,
 				134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */,
 				D4D8352A2127911600225736 /* Q5ViewController.swift in Sources */,
+				13919A062129EDA9009493ED /* Emotions.swift in Sources */,
 				1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */,
 				134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */,
 				134F99742124754300E10B6C /* Q15ViewController.swift in Sources */,
