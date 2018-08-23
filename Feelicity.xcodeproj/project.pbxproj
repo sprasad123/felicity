@@ -95,7 +95,7 @@
 		134F9983212513B900E10B6C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		135C732F212B3372001FEAA2 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDiagramViewController.swift; sourceTree = "<group>"; };
-		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		138C305020898576006D4129 /* Felicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		138C305820898577006D4129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		138C305120898576006D4129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				138C305020898576006D4129 /* Feelicity.app */,
+				138C305020898576006D4129 /* Felicity.app */,
 				138C306420898579006D4129 /* FeelicityTests.xctest */,
 				138C306F20898579006D4129 /* FeelicityUITests.xctest */,
 			);
@@ -267,9 +267,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		138C304F20898576006D4129 /* Feelicity */ = {
+		138C304F20898576006D4129 /* Felicity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Feelicity" */;
+			buildConfigurationList = 138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Felicity" */;
 			buildPhases = (
 				1D4C20F0F9C4B44E8F59196E /* [CP] Check Pods Manifest.lock */,
 				138C304C20898576006D4129 /* Sources */,
@@ -282,9 +282,9 @@
 			);
 			dependencies = (
 			);
-			name = Feelicity;
+			name = Felicity;
 			productName = Feelicity;
-			productReference = 138C305020898576006D4129 /* Feelicity.app */;
+			productReference = 138C305020898576006D4129 /* Felicity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		138C306320898579006D4129 /* FeelicityTests */ = {
@@ -361,7 +361,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				138C304F20898576006D4129 /* Feelicity */,
+				138C304F20898576006D4129 /* Felicity */,
 				138C306320898579006D4129 /* FeelicityTests */,
 				138C306E20898579006D4129 /* FeelicityUITests */,
 			);
@@ -566,12 +566,12 @@
 /* Begin PBXTargetDependency section */
 		138C306620898579006D4129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 138C304F20898576006D4129 /* Feelicity */;
+			target = 138C304F20898576006D4129 /* Felicity */;
 			targetProxy = 138C306520898579006D4129 /* PBXContainerItemProxy */;
 		};
 		138C307120898579006D4129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 138C304F20898576006D4129 /* Feelicity */;
+			target = 138C304F20898576006D4129 /* Felicity */;
 			targetProxy = 138C307020898579006D4129 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -846,7 +846,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Feelicity" */ = {
+		138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Felicity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				138C307920898579006D4129 /* Debug */,

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "138C304F20898576006D4129"
-               BuildableName = "Feelicity.app"
-               BlueprintName = "Feelicity"
+               BuildableName = "Felicity.app"
+               BlueprintName = "Felicity"
                ReferencedContainer = "container:Feelicity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "138C304F20898576006D4129"
-            BuildableName = "Feelicity.app"
-            BlueprintName = "Feelicity"
+            BuildableName = "Felicity.app"
+            BlueprintName = "Felicity"
             ReferencedContainer = "container:Feelicity.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "138C304F20898576006D4129"
-            BuildableName = "Feelicity.app"
-            BlueprintName = "Feelicity"
+            BuildableName = "Felicity.app"
+            BlueprintName = "Felicity"
             ReferencedContainer = "container:Feelicity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "138C304F20898576006D4129"
-            BuildableName = "Feelicity.app"
-            BlueprintName = "Feelicity"
+            BuildableName = "Felicity.app"
+            BlueprintName = "Felicity"
             ReferencedContainer = "container:Feelicity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

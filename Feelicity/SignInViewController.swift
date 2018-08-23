@@ -21,7 +21,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
         GIDSignIn.sharedInstance().uiDelegate = self
         
         facebookLogin.delegate = self
-        facebookLogin.readPermissions = [ "public_profile" ]
+        facebookLogin.readPermissions = [ "public_profile","email" ]
         
         if let accessToken = FBSDKAccessToken.current() {
             // User is logged in, use 'accessToken' here.
@@ -49,16 +49,24 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                 return
             }
             // User is signed in
-            //
             
-            // result from FB
-            var email = ""
-            if let data = result as? [String:Any] {
-                if let unwrappedEmail = data["email"] as? String {
-                    email = unwrappedEmail
+            FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id,name,email,first_name,last_name"]).start { (connection, result, err) in
+                
+                if err != nil {
+                    print("Failed to start graph request:", err ?? "")
+                    return
                 }
+                
+                // result from FB
+                var email = ""
+                if let data = result as? [String:Any] {
+                    if let unwrappedEmail = data["email"] as? String {
+                        email = unwrappedEmail
+                    }
+                }
+                self.ref?.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
+                print(result ?? "")
             }
-            self.ref?.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
             
             self.goToMainVC()
         }
@@ -112,7 +120,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
                 return
             }
             // User is signed in
-       //     self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
+       //self.ref.child("Users").child(Auth.auth().currentUser!.uid).setValue(["email": email])
             self.goToMainVC()
         }
     }
