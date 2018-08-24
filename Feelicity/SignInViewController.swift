@@ -147,8 +147,8 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
         User.setCurrentUser()
         //Put segue code here, In here go to next VC by calling your segue or doing it programattically
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let LogASessionVC = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController") as! LogASessionViewController
-        self.navigationController?.pushViewController(LogASessionVC, animated: true)
+        let TAndCVC = storyboard.instantiateViewController(withIdentifier: "TAndCViewController") 
+        self.navigationController?.pushViewController(TAndCVC, animated: true)
     }
     
     @objc func showAlert() {

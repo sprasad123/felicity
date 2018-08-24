@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		130D57A020F568C600A8CD1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 130D579F20F568C500A8CD1D /* GoogleService-Info.plist */; };
 		131743C2212F7F4500FAA9C9 /* Q20ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131743C1212F7F4500FAA9C9 /* Q20ViewController.swift */; };
+		131743C421304EAD00FAA9C9 /* TAndCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131743C321304EAD00FAA9C9 /* TAndCViewController.swift */; };
 		1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */; };
 		1327BCC621000A870008CBF6 /* CBTDefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327BCC521000A870008CBF6 /* CBTDefViewController.swift */; };
 		134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134AE0B421139482000C0858 /* SignUpViewController.swift */; };
@@ -74,6 +75,7 @@
 		10569E2100D6BE3344592C5D /* Pods_Feelicity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feelicity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		130D579F20F568C500A8CD1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		131743C1212F7F4500FAA9C9 /* Q20ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q20ViewController.swift; sourceTree = "<group>"; };
+		131743C321304EAD00FAA9C9 /* TAndCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAndCViewController.swift; sourceTree = "<group>"; };
 		1327BCC320FFD64D0008CBF6 /* LogASessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogASessionViewController.swift; sourceTree = "<group>"; };
 		1327BCC521000A870008CBF6 /* CBTDefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDefViewController.swift; sourceTree = "<group>"; };
 		134AE0B421139482000C0858 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				131743C321304EAD00FAA9C9 /* TAndCViewController.swift */,
 				131743C1212F7F4500FAA9C9 /* Q20ViewController.swift */,
 				13919A07212A4017009493ED /* ViewController.swift */,
 				13919A032129EB7E009493ED /* emotionsCell.swift */,
@@ -532,6 +535,7 @@
 				134F997A2124756600E10B6C /* Q18ViewController.swift in Sources */,
 				134F997E2124758800E10B6C /* PostMoodViewController.swift in Sources */,
 				D4D8352821278F3100225736 /* Q4ViewController.swift in Sources */,
+				131743C421304EAD00FAA9C9 /* TAndCViewController.swift in Sources */,
 				134F9984212513B900E10B6C /* Journal.swift in Sources */,
 				134F99782124755B00E10B6C /* Q17ViewController.swift in Sources */,
 				134F99762124754F00E10B6C /* Q16ViewController.swift in Sources */,

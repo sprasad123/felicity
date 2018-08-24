@@ -12,5 +12,7 @@ import UIKit
 class emotionsCell: UITableViewCell {
     
     @IBOutlet weak var emotionLabel: UILabel!
+    @IBOutlet weak var stronglyAgree: UILabel!
+    @IBOutlet weak var stronglyDisagree: UILabel!
     @IBOutlet weak var emotionSlider: UISlider!
 }

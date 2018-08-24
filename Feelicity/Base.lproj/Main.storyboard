@@ -15,20 +15,21 @@
         <scene sceneID="Sor-Tu-FxD">
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" id="lKp-sK-09M" userLabel="Login View Controller" customClass="SignInViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="e6n-mk-1Oa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <view key="view" contentMode="scaleToFill" id="e6n-mk-1Oa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41h-QB-89n">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="41h-QB-89n">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.396078431372549" green="0.64313725490196072" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.39215686274509803" green="0.65490196078431373" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31A-1m-vGj">
-                                <rect key="frame" x="16" y="386" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31A-1m-vGj">
+                                <rect key="frame" x="62" y="371" width="250" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Szc-rb-WsL"/>
                                     <constraint firstAttribute="height" constant="30" id="qTm-CV-qDG"/>
                                 </constraints>
                                 <state key="normal" title="Sign in">
@@ -38,46 +39,46 @@
                                     <action selector="emailLogin:" destination="lKp-sK-09M" eventType="touchUpInside" id="9ez-pZ-Oqw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-a6-h8o">
-                                <rect key="frame" x="64" y="444" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="FELICITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-hm-ECR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FELICITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-hm-ECR">
                                 <rect key="frame" x="117" y="46" width="141" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-0q-5MO">
-                                <rect key="frame" x="16" y="285" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-0q-5MO">
+                                <rect key="frame" x="62" y="270" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="72n-FY-mVY"/>
+                                    <constraint firstAttribute="width" constant="250" id="Nb8-Jj-iJV"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-XZ-kV7">
-                                <rect key="frame" x="16" y="333" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-XZ-kV7">
+                                <rect key="frame" x="62" y="318" width="250" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="N5X-5o-A98"/>
                                     <constraint firstAttribute="height" constant="30" id="bQf-Un-Itm"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDG-jw-dSh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDG-jw-dSh">
                                 <rect key="frame" x="96" y="109" width="182" height="134"/>
                                 <state key="normal" image="Sun"/>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-hG-en7" customClass="GIDSignInButton">
-                                <rect key="frame" x="16" y="490" width="343" height="0.0"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-hG-en7" customClass="GIDSignInButton">
+                                <rect key="frame" x="63" y="475" width="250" height="15"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="BTL-Jk-Ugt"/>
+                                    <constraint firstAttribute="width" constant="250" id="qfg-gA-tlb"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-7t-DRA">
-                                <rect key="frame" x="256" y="439" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-7t-DRA">
+                                <rect key="frame" x="159" y="437" width="55" height="30"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -85,52 +86,49 @@
                                     <segue destination="QLE-cy-EZ7" kind="show" identifier="signUpFrame" id="Rdd-Dc-Hbq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-bz-B9n" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="21" y="507" width="333" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-bz-B9n" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="63" y="507" width="250" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="nNI-KU-fVx"/>
+                                    <constraint firstAttribute="height" constant="40" id="odW-Mp-QjV"/>
+                                </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-a6-h8o">
+                                <rect key="frame" x="97" y="416" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="0mh-iz-knj"/>
                             <constraint firstItem="41h-QB-89n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" id="4Xy-8h-LbM"/>
-                            <constraint firstItem="fhT-XZ-kV7" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="7SF-33-A9Z"/>
-                            <constraint firstItem="aiK-hG-en7" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="7dy-Vd-LcT"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="aiK-hG-en7" secondAttribute="trailing" constant="16" id="82l-zy-kl2"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="8r5-Tf-f1l"/>
-                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="tXf-7t-DRA" secondAttribute="bottom" constant="21" id="A6N-ON-T0N"/>
+                            <constraint firstItem="tXf-7t-DRA" firstAttribute="centerX" secondItem="LbQ-a6-h8o" secondAttribute="centerX" id="57m-Z0-uK5"/>
+                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="tXf-7t-DRA" secondAttribute="bottom" constant="8" symbolic="YES" id="7pV-Sr-957"/>
+                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="15" id="AKU-JI-zhf"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="centerX" secondItem="Jqb-0q-5MO" secondAttribute="centerX" id="BVH-qG-wun"/>
-                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="64" id="Bll-28-Xis"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="CTk-ED-tbR"/>
-                            <constraint firstItem="tXf-7t-DRA" firstAttribute="leading" secondItem="LbQ-a6-h8o" secondAttribute="trailing" constant="13" id="CeM-Vm-PgZ"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="DnP-8M-D3P"/>
                             <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="yDG-jw-dSh" secondAttribute="trailing" constant="97" id="E6U-Tc-S1l"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="EB0-0u-6yT"/>
                             <constraint firstItem="41h-QB-89n" firstAttribute="top" secondItem="OcR-V3-n0O" secondAttribute="top" id="Jdt-4K-AEp"/>
-                            <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="LbQ-a6-h8o" secondAttribute="bottom" constant="25" id="KI7-gh-FqN"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="centerX" secondItem="yDG-jw-dSh" secondAttribute="centerX" id="NsH-au-fil"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="96" id="O6b-xR-4Ki"/>
-                            <constraint firstItem="fBr-bz-B9n" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="21" id="OkW-dc-vS8"/>
-                            <constraint firstItem="Jqb-0q-5MO" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="Sb2-S7-zfj"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="tXf-7t-DRA" secondAttribute="trailing" constant="64" id="XP0-Oj-EUm"/>
+                            <constraint firstItem="aiK-hG-en7" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="PA4-Lc-VM1"/>
                             <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="e6n-mk-1Oa" secondAttribute="top" constant="507" id="Y2A-Eo-VqM"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="centerX" secondItem="Ibg-hm-ECR" secondAttribute="centerX" id="Z3u-Pf-YO9"/>
                             <constraint firstItem="Ibg-hm-ECR" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="aqX-fj-t4A"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="top" secondItem="fhT-XZ-kV7" secondAttribute="bottom" constant="23" id="dCH-Kt-Byw"/>
-                            <constraint firstItem="31A-1m-vGj" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="fQM-N1-cIf"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="top" secondItem="yDG-jw-dSh" secondAttribute="bottom" constant="27" id="faU-8x-oIA"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="fx0-Z0-eM4"/>
                             <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="41h-QB-89n" secondAttribute="trailing" id="gpE-qb-m4Z"/>
                             <constraint firstItem="fBr-bz-B9n" firstAttribute="top" secondItem="aiK-hG-en7" secondAttribute="bottom" constant="17" id="i7j-xf-YOk"/>
                             <constraint firstItem="Ibg-hm-ECR" firstAttribute="top" secondItem="OcR-V3-n0O" secondAttribute="top" constant="26" id="ipI-b5-Pa9"/>
-                            <constraint firstItem="tXf-7t-DRA" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="23" id="j7L-i4-V0Q"/>
-                            <constraint firstItem="Jqb-0q-5MO" firstAttribute="leading" secondItem="OcR-V3-n0O" secondAttribute="leading" constant="16" id="jyp-nf-5Aq"/>
                             <constraint firstItem="yDG-jw-dSh" firstAttribute="top" secondItem="Ibg-hm-ECR" secondAttribute="bottom" constant="21" id="kEz-ew-4mW"/>
                             <constraint firstAttribute="bottomMargin" secondItem="41h-QB-89n" secondAttribute="bottom" id="kht-1m-vr5"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="centerX" secondItem="fhT-XZ-kV7" secondAttribute="centerX" id="l2x-MW-C84"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="trailing" secondItem="fBr-bz-B9n" secondAttribute="trailing" constant="21" id="l40-Jc-s2N"/>
-                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="28" id="oa1-hn-StO"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="bottom" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="120" id="wwF-r7-4Yn"/>
+                            <constraint firstItem="tXf-7t-DRA" firstAttribute="top" secondItem="LbQ-a6-h8o" secondAttribute="bottom" id="n08-es-6bs"/>
+                            <constraint firstItem="LbQ-a6-h8o" firstAttribute="centerX" secondItem="31A-1m-vGj" secondAttribute="centerX" id="v7U-OL-HFe"/>
+                            <constraint firstItem="fBr-bz-B9n" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="xZn-hD-zhe"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="top" secondItem="Jqb-0q-5MO" secondAttribute="bottom" constant="18" id="z8h-LO-riw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OcR-V3-n0O"/>
@@ -1318,7 +1316,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x29-vf-xe9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x29-vf-xe9">
                                                     <rect key="frame" x="15" y="11" width="313" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1327,14 +1325,36 @@
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VLP-Hu-diy">
                                                     <rect key="frame" x="13" y="39" width="317" height="31"/>
                                                 </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs7-7D-aem">
+                                                    <rect key="frame" x="15" y="32" width="107" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="107" id="e91-fG-maL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-T5-6V4">
+                                                    <rect key="frame" x="233" y="32" width="95" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="cv5-XE-9kO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="VLP-Hu-diy" firstAttribute="top" secondItem="x29-vf-xe9" secondAttribute="bottom" constant="7" id="0xE-e4-s6D"/>
                                                 <constraint firstItem="x29-vf-xe9" firstAttribute="top" secondItem="aUO-tH-cL9" secondAttribute="topMargin" id="14o-ZY-jHa"/>
+                                                <constraint firstItem="qDm-T5-6V4" firstAttribute="trailing" secondItem="aUO-tH-cL9" secondAttribute="trailingMargin" id="5BZ-hl-2ui"/>
+                                                <constraint firstItem="Fs7-7D-aem" firstAttribute="leading" secondItem="aUO-tH-cL9" secondAttribute="leadingMargin" id="9an-sS-fBQ"/>
                                                 <constraint firstItem="VLP-Hu-diy" firstAttribute="top" secondItem="x29-vf-xe9" secondAttribute="bottom" constant="7" id="B6Y-p2-0ws"/>
                                                 <constraint firstItem="x29-vf-xe9" firstAttribute="leading" secondItem="aUO-tH-cL9" secondAttribute="leadingMargin" id="NZ4-bx-S5y"/>
                                                 <constraint firstItem="VLP-Hu-diy" firstAttribute="leading" secondItem="aUO-tH-cL9" secondAttribute="leadingMargin" id="QzF-BL-yfh"/>
                                                 <constraint firstItem="VLP-Hu-diy" firstAttribute="bottom" secondItem="aUO-tH-cL9" secondAttribute="bottomMargin" id="SrF-QC-4y7"/>
+                                                <constraint firstItem="Fs7-7D-aem" firstAttribute="top" secondItem="x29-vf-xe9" secondAttribute="bottom" id="Xes-uJ-O60"/>
+                                                <constraint firstItem="qDm-T5-6V4" firstAttribute="top" secondItem="x29-vf-xe9" secondAttribute="bottom" id="cC0-g1-KNg"/>
                                                 <constraint firstItem="VLP-Hu-diy" firstAttribute="trailing" secondItem="aUO-tH-cL9" secondAttribute="trailingMargin" id="gn4-Z3-Wlw"/>
                                                 <constraint firstItem="x29-vf-xe9" firstAttribute="trailing" secondItem="aUO-tH-cL9" secondAttribute="trailingMargin" id="lc2-TE-1db"/>
                                             </constraints>
@@ -1342,6 +1362,8 @@
                                         <connections>
                                             <outlet property="emotionLabel" destination="x29-vf-xe9" id="4G9-hT-XfL"/>
                                             <outlet property="emotionSlider" destination="VLP-Hu-diy" id="goP-AJ-G7M"/>
+                                            <outlet property="stronglyAgree" destination="qDm-T5-6V4" id="iDf-4E-2fi"/>
+                                            <outlet property="stronglyDisagree" destination="Fs7-7D-aem" id="0kZ-Pd-I7s"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -3368,9 +3390,27 @@
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vjX-5f-cLc">
                                                     <rect key="frame" x="13" y="53" width="317" height="31"/>
                                                 </slider>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyT-vZ-4wp">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyT-vZ-4wp">
                                                     <rect key="frame" x="15" y="24" width="313" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99O-cZ-063">
+                                                    <rect key="frame" x="15" y="36" width="106" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="106" id="UWG-cz-Xjf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkG-aZ-lSS">
+                                                    <rect key="frame" x="233" y="36" width="95" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="95" id="Ois-eg-aWy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -3381,13 +3421,19 @@
                                                 <constraint firstItem="wyT-vZ-4wp" firstAttribute="leading" secondItem="sgP-Jm-7Na" secondAttribute="leadingMargin" id="L0N-sB-Maw"/>
                                                 <constraint firstItem="wyT-vZ-4wp" firstAttribute="top" secondItem="sgP-Jm-7Na" secondAttribute="topMargin" constant="13" id="P9J-ap-VIZ"/>
                                                 <constraint firstItem="vjX-5f-cLc" firstAttribute="top" secondItem="wyT-vZ-4wp" secondAttribute="bottom" constant="8" id="QAb-EU-juQ"/>
+                                                <constraint firstItem="99O-cZ-063" firstAttribute="top" secondItem="sgP-Jm-7Na" secondAttribute="topMargin" constant="25" id="QW1-CH-XhO"/>
                                                 <constraint firstItem="vjX-5f-cLc" firstAttribute="leading" secondItem="sgP-Jm-7Na" secondAttribute="leading" constant="15" id="aWi-pX-KQr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QkG-aZ-lSS" secondAttribute="trailing" id="gcU-At-phv"/>
+                                                <constraint firstItem="99O-cZ-063" firstAttribute="leading" secondItem="sgP-Jm-7Na" secondAttribute="leadingMargin" id="iQy-AK-HeS"/>
                                                 <constraint firstAttribute="trailing" secondItem="vjX-5f-cLc" secondAttribute="trailing" constant="15" id="jL5-Tt-tyG"/>
+                                                <constraint firstItem="QkG-aZ-lSS" firstAttribute="top" secondItem="sgP-Jm-7Na" secondAttribute="topMargin" constant="25" id="q01-EV-ATF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="emotionLabel" destination="wyT-vZ-4wp" id="Phk-QT-hNu"/>
                                             <outlet property="emotionSlider" destination="vjX-5f-cLc" id="lwd-M2-m8D"/>
+                                            <outlet property="stronglyAgree" destination="QkG-aZ-lSS" id="Jq5-73-ZWY"/>
+                                            <outlet property="stronglyDisagree" destination="99O-cZ-063" id="i59-0O-BpY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -3694,6 +3740,9 @@
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le6-h4-AUi">
                                 <rect key="frame" x="68" y="369" width="91" height="90"/>
                                 <state key="normal" image="Tired"/>
+                                <connections>
+                                    <action selector="TiredButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="Dy4-eh-AOg"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.95999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="coU-SP-8qH">
                                 <rect key="frame" x="21" y="615" width="333" height="2"/>
@@ -3763,6 +3812,7 @@
                         <outlet property="nervousButton" destination="Oxx-Qx-B1K" id="cwi-qC-HGY"/>
                         <outlet property="okbutton" destination="JZn-bW-GQ5" id="5mX-lo-G0F"/>
                         <outlet property="sadButton" destination="HW3-3o-n9k" id="nic-Cl-R1f"/>
+                        <outlet property="tiredButton" destination="le6-h4-AUi" id="Rrq-zJ-HvV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5WD-mE-ZJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3898,15 +3948,15 @@ the pros and the cons</string>
             <objects>
                 <viewController id="QLE-cy-EZ7" userLabel="SignUp View Controller" customClass="SignUpViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1y-3A-EFk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZp-PM-aON">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.64313725489999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-fE-zKW">
-                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <rect key="frame" x="16" y="371" width="343" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
                                 <state key="normal" title="Sign Up">
@@ -3914,29 +3964,29 @@ the pros and the cons</string>
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="QLE-cy-EZ7" eventType="touchUpInside" id="K8y-IC-Ws2"/>
-                                    <segue destination="4Mn-mH-7FG" kind="show" id="qKy-XX-7AG"/>
+                                    <segue destination="5vU-M0-PXQ" kind="show" id="yvx-bk-hkl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FELICITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI7-L1-xdF">
-                                <rect key="frame" x="117" y="26" width="141" height="42"/>
+                                <rect key="frame" x="117" y="46" width="141" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WBI-cv-lMQ">
-                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                <rect key="frame" x="16" y="270" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-tT-Nv0">
-                                <rect key="frame" x="16" y="298" width="343" height="30"/>
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHm-r8-4Qz">
-                                <rect key="frame" x="96" y="89" width="182" height="134"/>
+                                <rect key="frame" x="96" y="109" width="182" height="134"/>
                                 <state key="normal" image="Sun"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5J-z4-VNt">
@@ -3987,6 +4037,150 @@ the pros and the cons</string>
             </objects>
             <point key="canvasLocation" x="1388" y="32"/>
         </scene>
+        <!--TAndC View Controller-->
+        <scene sceneID="kWw-gT-0Gq">
+            <objects>
+                <viewController storyboardIdentifier="TAndCViewController" id="5vU-M0-PXQ" userLabel="TAndC View Controller" customClass="TAndCViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSr-aQ-usd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvb-Is-i3V">
+                                <rect key="frame" x="16" y="40" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-Xv-BVl">
+                                <rect key="frame" x="16" y="60" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grR-1c-JX1">
+                                <rect key="frame" x="240" y="617" width="49" height="30"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <segue destination="4Mn-mH-7FG" kind="show" id="E22-Eb-ZNj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-nx-0ro">
+                                <rect key="frame" x="86" y="617" width="88" height="30"/>
+                                <state key="normal" title="Don't accept"/>
+                                <connections>
+                                    <action selector="dontAcceptAlert:" destination="5vU-M0-PXQ" eventType="touchUpInside" id="Asb-x4-crO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-AZ-hoU">
+                                <rect key="frame" x="16" y="116" width="343" height="479"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Welcome to FELICITY
+
+These terms and conditions outline the rules and regulations for the use of FELICITY, which refers to both the mobile application, Felicity, and website, felicitycbt.com.
+	
+FELICITY is located at: 
+	9450 Gilman Dr., La Jolla
+CA - 92092-0100, United States
+	
+	By accessing this mobile application and website we assume you accept these terms and conditions in full. Do not continue to use FELICITY's mobile application and website if you do not accept all of the terms and conditions stated on this page.
+	The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this mobile application and website and accepting the Company’s terms and conditions. “FELICITY”, “Ourselves”, “We”, “Our” and “Us”, refers to our mobile application, website, and team. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law of United States. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+
+Cookies
+	We employ the use of cookies. By using FELICITY's mobile application and website you consent to the use of cookies in accordance with FELICITY’s privacy policy. Most of the modern day interactive websites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.License
+	Unless otherwise stated, FELICITY and/or its licensors own the intellectual property rights for all material on FELICITY. All intellectual property rights are reserved. You may view and/or print pages from http://felicitycbt.com and/or the mobile application, Felicity, for your own personal use subject to restrictions set in these terms and conditions.
+	You must not:
+		Republish material from http://felicitycbt.com or Felicity, the mobile application
+Sell, rent or sub-license material from http://felicitycbt.com or Felicity, the mobile application
+Reproduce, duplicate or copy material from http://felicitycbt.com or Felicity, the mobile application
+Redistribute content from felicitycbt.com or Felicity, the mobile application, (unless content is specifically made for redistribution).
+Hyperlinking to our Content
+	The following organizations may link to our Web site or mobile application without prior written approval:
+			Government agencies;
+			Search engines;
+			News organizations;
+			Universities and colleges;
+			Online directory distributors when they list us in the directory may link to 
+our Web site in the same manner as they hyperlink to the Web sites of 
+other listed businesses; and Systemwide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.
+	
+These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.
+
+We may consider and approve in our sole discretion other link requests from the following types of organizations: commonly-known consumer and/or business information sources such as Chambers of Commerce, American Automobile Association, AARP and Consumers Union; dot.com community sites; associations or other groups representing charities, including charity giving sites, online directory distributors; internet portals; accounting, law and consulting firms whose primary clients are businesses; and educational institutions and trade associations.
+			
+We will approve link requests from these organizations if we determine that: (a) the link would not reflect unfavorably on us or our accredited businesses (for example, trade associations or other organizations representing inherently suspect types of business, such as work-at-home opportunities, shall not be allowed to link); (b)the organization does not have an unsatisfactory record with us; (c) the benefit to us from the visibility associated with the hyperlink outweighs the absence of ; and (d) where the link is in the context of general resource information or is otherwise consistent with editorial content in a newsletter or similar product furthering the mission of the organization.
+
+These organizations may link to our home page, to publications or to other Web site information so long as the link: (a) is not in any way misleading; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and it products or services; and (c) fits within the context of the linking party's site.
+
+If you are among the organizations listed in paragraph 2 above and are interested in linking to our mobile application and website, you must notify us by sending an e-mail to felicity.cbt@gmail.com. Please include your name, your organization name, contact information (such as a phone number and/or e-mail address) as well as the URL of your site, a list of any URLs from which you intend to link to our Web site and/or mobile application, and a list of the URL(s) on our site to which you would like to link. Allow 2-3 weeks for a response.
+
+Approved organizations may hyperlink to our Web site and/or mobile application as follows:
+		By use of our corporate name; or
+		By use of the uniform resource locator (Web address) being linked to; or
+		By use of any other description of our Web site or material being linked to that 
+makes sense within the context and format of content on the linking party's site.
+	
+No use of FELICITY’s logo or other artwork will be allowed for linking absent a trademark license agreement.
+
+Iframes
+Without prior approval and express written permission, you may not create frames around our Web pages and/or mobile application or use other techniques that alter in any way the visual presentation or appearance of our Web site and/or mobile application.
+
+Reservation of Rights
+	We reserve the right at any time and in its sole discretion to request that you remove all links or any particular link to our Web site and/or mobile application. You agree to immediately remove all links to our Web site and/or mobile application upon such request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuing to link to our Web site and/or mobile application, you agree to be bound to and abide by these linking terms and conditions.
+
+References 
+	We give credit to the sources in which we acquired information from. Works cited or references may be accessed on the mobile application and website. We do not take credit for cited materials. 
+
+Removal of links from our mobile application and website
+	If you find any link on our Web site and/or mobile application or any linked web site and/or mobile application objectionable for any reason, you may contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you. Whilst we endeavour to ensure that the information on this mobile application and website is correct, we do not warrant its completeness or accuracy; nor do we commit to ensuring that the mobile application and website remains available or that the material on the mobile application and website is kept up to date.
+
+Content Liability
+	We shall have no responsibility or liability for any content appearing on your Web site and/or mobile application. You agree to indemnify and defend us against all claims arising out of or based upon your mobile application and website. No link(s) may appear on any page on your Web site and/or mobile application or within any context containing content or materials that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.
+
+Disclaimer
+	To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our mobile application and website and the use of this mobile application and website (including, without limitation, any warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill). Nothing in this disclaimer will:
+	limit or exclude our or your liability for death or personal injury resulting from negligence;
+	limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+	limit any of our or your liabilities in any way that is not permitted under applicable law; or
+	exclude any of our or your liabilities that may not be excluded under applicable law.
+	
+	The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer: 
+are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in tort (including negligence) and for breach of statutory duty.
+	To the extent that the mobile application and website and the information and services on the mobile application and website are provided free of charge, we will not be liable for any loss or damage of any nature. 
+
+Storage of Personal Information
+	Felicity will store your personal information in a secure database. The research and data analytic teams will have access to this data. When you use Felicity, you accept to allow for the storage, usage, and  potential transfer of your personal information.  Data yielded from your use of Felicity may be used to assist with development. We are not liable in the case of data breaches or data loss.
+
+Credit &amp; Contact Information
+	This Terms and conditions page was created at termsandconditionstemplate.com generator and edited by a team member of FELICITY. If you have any queries regarding any of our terms, please contact us at felicity.cbt@gmail.com.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="We5-Sw-cgN" firstAttribute="trailing" secondItem="Dmq-AZ-hoU" secondAttribute="trailing" constant="16" id="5jP-nf-dGn"/>
+                            <constraint firstItem="qWz-Xv-BVl" firstAttribute="leading" secondItem="We5-Sw-cgN" secondAttribute="leading" constant="16" id="6I2-MU-liV"/>
+                            <constraint firstItem="We5-Sw-cgN" firstAttribute="trailing" secondItem="qWz-Xv-BVl" secondAttribute="trailing" constant="16" id="7Mo-7B-rj8"/>
+                            <constraint firstItem="qWz-Xv-BVl" firstAttribute="top" secondItem="fvb-Is-i3V" secondAttribute="bottom" constant="20" id="8kr-1h-kiV"/>
+                            <constraint firstItem="grR-1c-JX1" firstAttribute="top" secondItem="Dmq-AZ-hoU" secondAttribute="bottom" constant="22" id="En3-E1-zCP"/>
+                            <constraint firstItem="We5-Sw-cgN" firstAttribute="bottom" secondItem="grR-1c-JX1" secondAttribute="bottom" constant="20" id="J79-i0-izs"/>
+                            <constraint firstItem="g36-nx-0ro" firstAttribute="leading" secondItem="We5-Sw-cgN" secondAttribute="leading" constant="86" id="X4l-GX-Kmr"/>
+                            <constraint firstItem="We5-Sw-cgN" firstAttribute="bottom" secondItem="g36-nx-0ro" secondAttribute="bottom" constant="20" id="eby-KC-lza"/>
+                            <constraint firstItem="fvb-Is-i3V" firstAttribute="leading" secondItem="qWz-Xv-BVl" secondAttribute="leading" id="gCK-MX-787"/>
+                            <constraint firstItem="We5-Sw-cgN" firstAttribute="trailing" secondItem="grR-1c-JX1" secondAttribute="trailing" constant="86" id="grn-Cr-fbG"/>
+                            <constraint firstItem="Dmq-AZ-hoU" firstAttribute="leading" secondItem="We5-Sw-cgN" secondAttribute="leading" constant="16" id="o6a-Hp-ikb"/>
+                            <constraint firstItem="fvb-Is-i3V" firstAttribute="top" secondItem="We5-Sw-cgN" secondAttribute="top" constant="20" id="sMb-KZ-Gem"/>
+                            <constraint firstItem="fvb-Is-i3V" firstAttribute="trailing" secondItem="qWz-Xv-BVl" secondAttribute="trailing" id="uOF-vs-Qgl"/>
+                            <constraint firstItem="Dmq-AZ-hoU" firstAttribute="top" secondItem="qWz-Xv-BVl" secondAttribute="bottom" constant="35" id="zkc-n1-HsS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="We5-Sw-cgN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TQp-vz-GRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397.5999999999999" y="797.45127436281871"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Angry" width="90" height="90"/>
@@ -4006,6 +4200,6 @@ the pros and the cons</string>
     <inferredMetricsTieBreakers>
         <segue reference="dKF-yb-xtK"/>
         <segue reference="H2C-u5-edP"/>
-        <segue reference="4Tz-rA-qiw"/>
+        <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>
