@@ -79,6 +79,7 @@ class Journal: NSObject {
     
     var isExcludingInfoYes: Bool = false
     var isExcludingInfoNo: Bool = false
+    var excludedInfo: String? = ""
     
     var blackAndWhiteThinking: Bool = false
     var overgeneralizing: Bool = false
@@ -101,6 +102,10 @@ class Journal: NSObject {
     
     var alternativeView: String? = ""
     var alternativeBelief: Int = 50
+    
+    var doneDifferently: String? = ""
+    var whatHelped: String? = ""
+    var whatDidnt: String? = ""
     
     var feelsAngerPost: Bool = false
     var feelsHopelessnessPost: Bool = false

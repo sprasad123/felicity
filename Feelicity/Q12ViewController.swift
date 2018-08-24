@@ -15,6 +15,7 @@ class Q12ViewController: UIViewController {
     
     @IBOutlet weak var Yes: UISwitch!
     @IBOutlet weak var No: UISwitch!
+    @IBOutlet weak var textBox: UITextView!
     
     override func viewDidLoad() {
         Journal.current?.currentPage = 16
@@ -44,6 +45,7 @@ class Q12ViewController: UIViewController {
         else {
             Journal.current?.isExcludingInfoNo = false
         }
+        Journal.current?.excludedInfo = textBox.text
     }
     
 }
