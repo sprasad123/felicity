@@ -33,6 +33,8 @@
 		134F9984212513B900E10B6C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F9983212513B900E10B6C /* Journal.swift */; };
 		135C7330212B3372001FEAA2 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C732F212B3372001FEAA2 /* Thought.swift */; };
 		1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */; };
+		138C13CC213613B20076A629 /* CognitiveDistortionsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C13CB213613B20076A629 /* CognitiveDistortionsPopup.swift */; };
+		138C13CE2136141A0076A629 /* ReferencesPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C13CD2136141A0076A629 /* ReferencesPopup.swift */; };
 		138C305420898577006D4129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305320898577006D4129 /* AppDelegate.swift */; };
 		138C305620898577006D4129 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138C305520898577006D4129 /* SignInViewController.swift */; };
 		138C305920898577006D4129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138C305720898577006D4129 /* Main.storyboard */; };
@@ -99,6 +101,8 @@
 		134F9983212513B900E10B6C /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		135C732F212B3372001FEAA2 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDiagramViewController.swift; sourceTree = "<group>"; };
+		138C13CB213613B20076A629 /* CognitiveDistortionsPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveDistortionsPopup.swift; sourceTree = "<group>"; };
+		138C13CD2136141A0076A629 /* ReferencesPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesPopup.swift; sourceTree = "<group>"; };
 		138C305020898576006D4129 /* Felicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				138C305320898577006D4129 /* AppDelegate.swift */,
 				138C305520898577006D4129 /* SignInViewController.swift */,
 				138C305720898577006D4129 /* Main.storyboard */,
+				138C13CB213613B20076A629 /* CognitiveDistortionsPopup.swift */,
+				138C13CD2136141A0076A629 /* ReferencesPopup.swift */,
 				131743C321304EAD00FAA9C9 /* TAndCViewController.swift */,
 				131743C1212F7F4500FAA9C9 /* Q20ViewController.swift */,
 				13919A07212A4017009493ED /* ViewController.swift */,
@@ -542,6 +548,7 @@
 				D4D8352A2127911600225736 /* Q5ViewController.swift in Sources */,
 				13919A062129EDA9009493ED /* Emotions.swift in Sources */,
 				1382BA5A212795EF00C35F08 /* CBTDiagramViewController.swift in Sources */,
+				138C13CC213613B20076A629 /* CognitiveDistortionsPopup.swift in Sources */,
 				134F996A212474F500E10B6C /* Q10ViewController.swift in Sources */,
 				134F99742124754300E10B6C /* Q15ViewController.swift in Sources */,
 				1327BCC420FFD64D0008CBF6 /* LogASessionViewController.swift in Sources */,
@@ -549,6 +556,7 @@
 				134F9962212474A800E10B6C /* Q6ViewController.swift in Sources */,
 				138C305420898577006D4129 /* AppDelegate.swift in Sources */,
 				134AE0B521139483000C0858 /* SignUpViewController.swift in Sources */,
+				138C13CE2136141A0076A629 /* ReferencesPopup.swift in Sources */,
 				D4D8352421278CBA00225736 /* Q2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,7 +734,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VY6L2QW5JY;
 				INFOPLIST_FILE = Feelicity/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,7 +754,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VY6L2QW5JY;
 				INFOPLIST_FILE = Feelicity/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -39,6 +39,11 @@ class EndViewController: UIViewController {
         //counter for number of lines needed in label
         label.textAlignment = NSTextAlignment.center
         var counter: Int = 0
+        
+        if Journal.current == nil {
+            return
+        }
+        
         if (Journal.current?.blackAndWhiteThinking)! {
             label.text = "Black and White Thinking"
             counter+=1
@@ -102,7 +107,10 @@ class EndViewController: UIViewController {
         }
         
         // write to firebase
-        
+        if Auth.auth().currentUser == nil {
+            return
+        }
+        else {
         let key = Auth.auth().currentUser!.uid
         let journal = ["User": key,
                        "Timestamp": getStringFromDate(format: "MMMM dd, yyyy 'at' hh:mm:ss a 'UTC'Z"),
@@ -211,14 +219,11 @@ class EndViewController: UIViewController {
             self.ref?.child("Users").child(key).child("Journal").child(journal["Date"] as! String).updateChildValues([id: journal["Timestamp"]])
             
         })
+        }   // else clause
         
         // reset app
         Journal.current = nil
         UserDefaults.standard.set(nil, forKey: "currentJournal")
-    /*    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let SignInVC = storyboard.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
-        let LogASessionVC = storyboard.instantiateViewController(withIdentifier: "LogASessionViewController") as! LogASessionViewController
-        self.navigationController?.setViewControllers([SignInVC, LogASessionVC], animated: true)    // signInVC is behind logasessionvc */
     }
     
 }
