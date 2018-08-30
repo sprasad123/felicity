@@ -16,7 +16,9 @@ import FBSDKLoginKit
 class LogASessionViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
-        
+        if (Auth.auth().currentUser?.uid == nil) {
+            self.goToSignInVC()
+        }
         Journal.current?.currentPage = 1
         guard let currentJournal = UserDefaults.standard.object(forKey: "currentJournal") as? Journal else {
             Journal.current = Journal()
