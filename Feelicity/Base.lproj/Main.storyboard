@@ -128,9 +128,9 @@
                             <constraint firstItem="aiK-hG-en7" firstAttribute="top" secondItem="tXf-7t-DRA" secondAttribute="bottom" constant="8" symbolic="YES" id="7pV-Sr-957"/>
                             <constraint firstItem="LbQ-a6-h8o" firstAttribute="top" secondItem="31A-1m-vGj" secondAttribute="bottom" constant="15" id="AKU-JI-zhf"/>
                             <constraint firstItem="fhT-XZ-kV7" firstAttribute="centerX" secondItem="Jqb-0q-5MO" secondAttribute="centerX" id="BVH-qG-wun"/>
-                            <constraint firstItem="OcR-V3-n0O" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="40" id="CRW-k7-Ijp"/>
-                            <constraint firstItem="mqJ-cE-Oro" firstAttribute="top" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="8" id="DRJ-Kr-Gue"/>
+                            <constraint firstItem="mqJ-cE-Oro" firstAttribute="top" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="8" id="CUL-ue-pdl"/>
                             <constraint firstItem="31A-1m-vGj" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="DnP-8M-D3P"/>
+                            <constraint firstItem="OcR-V3-n0O" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fBr-bz-B9n" secondAttribute="bottom" constant="40" id="GMb-RK-FO5"/>
                             <constraint firstItem="aiK-hG-en7" firstAttribute="centerX" secondItem="e6n-mk-1Oa" secondAttribute="centerX" id="GmG-QS-TxM"/>
                             <constraint firstItem="41h-QB-89n" firstAttribute="top" secondItem="OcR-V3-n0O" secondAttribute="top" id="Jdt-4K-AEp"/>
                             <constraint firstItem="Jqb-0q-5MO" firstAttribute="centerX" secondItem="yDG-jw-dSh" secondAttribute="centerX" id="NsH-au-fil"/>
@@ -1530,7 +1530,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headahces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-Lc-s4b">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headaches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxS-Lc-s4b">
                                 <rect key="frame" x="109" y="394.5" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4026,13 +4026,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
+                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="101" height="156"/>
+                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
                                         <state key="normal" title="OK"/>
                                     </button>
                                 </subviews>
@@ -4333,6 +4333,10 @@ Credit &amp; Contact Information
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="We5-Sw-cgN"/>
                     </view>
+                    <connections>
+                        <outlet property="accept" destination="grR-1c-JX1" id="DKT-0k-0to"/>
+                        <outlet property="textView" destination="Dmq-AZ-hoU" id="4wY-Om-oz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQp-vz-GRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4583,8 +4587,9 @@ Credit &amp; Contact Information
         <image name="Works Cited" width="300" height="323"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Rdd-Dc-Hbq"/>
         <segue reference="SYS-DN-fyl"/>
         <segue reference="H2C-u5-edP"/>
-        <segue reference="8uP-pC-YDv"/>
+        <segue reference="adA-9h-ZFA"/>
     </inferredMetricsTieBreakers>
 </document>

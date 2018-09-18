@@ -11,8 +11,16 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class  TAndCViewController: UIViewController {
+class  TAndCViewController: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var accept: UIButton!
+    
+    @IBOutlet weak var textView: UITextView! {
+        didSet {
+            textView.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 5
@@ -26,6 +34,9 @@ class  TAndCViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+     
+        accept.isEnabled = false
+        
     }
     
     @IBAction func dontAcceptAlert(_ sender: Any) {
@@ -34,6 +45,10 @@ class  TAndCViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        accept.isEnabled = scrollView.contentOffset.y + scrollView.bounds.height == scrollView.contentSize.height
     }
 
 
