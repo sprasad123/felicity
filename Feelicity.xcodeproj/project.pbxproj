@@ -103,7 +103,7 @@
 		1382BA59212795EF00C35F08 /* CBTDiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTDiagramViewController.swift; sourceTree = "<group>"; };
 		138C13CB213613B20076A629 /* CognitiveDistortionsPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveDistortionsPopup.swift; sourceTree = "<group>"; };
 		138C13CD2136141A0076A629 /* ReferencesPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesPopup.swift; sourceTree = "<group>"; };
-		138C305020898576006D4129 /* Felicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		138C305020898576006D4129 /* Feelicity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feelicity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138C305320898577006D4129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138C305520898577006D4129 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		138C305820898577006D4129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		138C305120898576006D4129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				138C305020898576006D4129 /* Felicity.app */,
+				138C305020898576006D4129 /* Feelicity.app */,
 				138C306420898579006D4129 /* FeelicityTests.xctest */,
 				138C306F20898579006D4129 /* FeelicityUITests.xctest */,
 			);
@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		138C304F20898576006D4129 /* Felicity */ = {
+		138C304F20898576006D4129 /* Feelicity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Felicity" */;
+			buildConfigurationList = 138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Feelicity" */;
 			buildPhases = (
 				1D4C20F0F9C4B44E8F59196E /* [CP] Check Pods Manifest.lock */,
 				138C304C20898576006D4129 /* Sources */,
@@ -294,9 +294,9 @@
 			);
 			dependencies = (
 			);
-			name = Felicity;
+			name = Feelicity;
 			productName = Feelicity;
-			productReference = 138C305020898576006D4129 /* Felicity.app */;
+			productReference = 138C305020898576006D4129 /* Feelicity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		138C306320898579006D4129 /* FeelicityTests */ = {
@@ -373,7 +373,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				138C304F20898576006D4129 /* Felicity */,
+				138C304F20898576006D4129 /* Feelicity */,
 				138C306320898579006D4129 /* FeelicityTests */,
 				138C306E20898579006D4129 /* FeelicityUITests */,
 			);
@@ -494,6 +494,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -505,6 +506,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -582,12 +584,12 @@
 /* Begin PBXTargetDependency section */
 		138C306620898579006D4129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 138C304F20898576006D4129 /* Felicity */;
+			target = 138C304F20898576006D4129 /* Feelicity */;
 			targetProxy = 138C306520898579006D4129 /* PBXContainerItemProxy */;
 		};
 		138C307120898579006D4129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 138C304F20898576006D4129 /* Felicity */;
+			target = 138C304F20898576006D4129 /* Feelicity */;
 			targetProxy = 138C307020898579006D4129 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -665,7 +667,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -732,14 +734,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VY6L2QW5JY;
+				DEVELOPMENT_TEAM = 95R565AJW6;
 				INFOPLIST_FILE = Feelicity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Feelicity.Feelicity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feelicity.Feelicity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,14 +754,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VY6L2QW5JY;
+				DEVELOPMENT_TEAM = 95R565AJW6;
 				INFOPLIST_FILE = Feelicity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Feelicity.Feelicity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feelicity.Feelicity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -864,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Felicity" */ = {
+		138C307820898579006D4129 /* Build configuration list for PBXNativeTarget "Feelicity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				138C307920898579006D4129 /* Debug */,
