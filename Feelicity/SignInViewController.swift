@@ -15,8 +15,22 @@ import FBSDKLoginKit
 class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     var ref: DatabaseReference!
     
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        emailTextField.inputAccessoryView = toolbar
+        passwordTextField.inputAccessoryView = toolbar
+        
         ref = Database.database().reference()
         GIDSignIn.sharedInstance().uiDelegate = self
         
@@ -33,6 +47,10 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginBut
         // TODO(developer) Configure the sign-in button look/feel
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "GreenBackground"))!)
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {

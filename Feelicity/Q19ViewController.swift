@@ -180,4 +180,9 @@ class Q19ViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     
+    @IBAction func Q19(_ sender: Any) {
+        Analytics.logEvent("land_on_Q20", parameters: ["land_on_Q20": true])
+    }
+    
+    
 }

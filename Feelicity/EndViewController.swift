@@ -88,6 +88,11 @@ class EndViewController: UIViewController {
         self.submitToFirebase()
     }
     
+    @IBAction func done(_ sender: Any) {
+        Analytics.logEvent("hit_DONE", parameters: ["hit_DONE": true])
+    }
+    
+    
     func getStringFromDate(format:String) -> String {
         let date = Date()
         let formatter = DateFormatter()

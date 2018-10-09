@@ -106,5 +106,9 @@ class Q18ViewController: UIViewController {
         sensitive.backgroundColor = currentJournal.feelsSensitivePost ? UIColor.gray : UIColor.lightGray
     }
     
+    @IBAction func Q18(_ sender: Any) {
+        Analytics.logEvent("land_on_Q19", parameters: ["land_on_Q19": true])
+    }
+    
     
 }

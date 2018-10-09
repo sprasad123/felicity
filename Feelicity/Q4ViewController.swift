@@ -107,5 +107,10 @@ class  Q4ViewController: UIViewController {
         navigationItem.titleView = imageView
     }
     
+    @IBAction func Q4(_ sender: Any) {
+        Analytics.logEvent("land_on_Q5", parameters: ["land_on_Q5": true])
+    }
+    
+    
 }
 

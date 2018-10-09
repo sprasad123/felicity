@@ -28,11 +28,21 @@ class  Q1ViewController: UIViewController {
             NoSwitch.isOn ?
             true: false
         Journal.current?.situationDescription2 = Q1TextBox.text
+        Analytics.logEvent("land_on_Q2", parameters: ["land_on_Q2": true])
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        Q1TextBox.inputAccessoryView = toolbar
+        
         Journal.current?.currentPage = 5
         // 3
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -44,6 +54,10 @@ class  Q1ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
 }

@@ -57,8 +57,22 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        emailLogin.inputAccessoryView = toolbar
+        passwordLogin.inputAccessoryView = toolbar
+        
         ref =  Database.database().reference()
         self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "GreenBackground"))!)
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {

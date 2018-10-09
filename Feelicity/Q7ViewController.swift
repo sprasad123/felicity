@@ -20,6 +20,14 @@ class Q7ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 11
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        text1.inputAccessoryView = toolbar
+        text2.inputAccessoryView = toolbar
         // 3
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -32,10 +40,16 @@ class Q7ViewController: UIViewController {
         navigationItem.titleView = imageView
     }
     
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    
     @IBAction func submit(_ sender: Any) {
         
         Journal.current?.behavior = text1.text
         Journal.current?.behaviorInfluence = text2.text
+        
+        Analytics.logEvent("land_on_Q8", parameters: ["land_on_Q8": true])
         
     }
     

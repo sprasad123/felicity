@@ -79,4 +79,8 @@ class PostMoodViewController: UIViewController {
         okbutton.alpha = currentJournal.postOkay ? 1.0 : 0.5
     }
     
+    @IBAction func PostMood(_ sender: Any) {
+        Analytics.logEvent("land_on_End", parameters: ["land_on_End": true])
+    }
+    
 }

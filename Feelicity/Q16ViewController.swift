@@ -39,6 +39,7 @@ class Q16ViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
         
         Journal.current?.believePreviousThought = Int(beliefSlider.value * 100)
+        Analytics.logEvent("land_on_Q17", parameters: ["land_on_Q17": true])
     }
     
 }

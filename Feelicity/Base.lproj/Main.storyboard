@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2XY-Qd-Hf9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="Sor-Tu-FxD">
             <objects>
-                <viewController storyboardIdentifier="SignInViewController" id="lKp-sK-09M" userLabel="Login View Controller" customClass="SignInViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="lKp-sK-09M" userLabel="Login View Controller" customClass="SignInViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e6n-mk-1Oa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +24,7 @@
                                 <color key="tintColor" red="0.39215686274509803" green="0.65490196078431373" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31A-1m-vGj">
-                                <rect key="frame" x="62" y="371" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="371" width="250" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
                                 <constraints>
@@ -47,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-0q-5MO">
-                                <rect key="frame" x="62" y="270" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="270" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="72n-FY-mVY"/>
                                     <constraint firstAttribute="width" constant="250" id="Nb8-Jj-iJV"/>
@@ -57,7 +55,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-XZ-kV7">
-                                <rect key="frame" x="62" y="318" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="318" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="N5X-5o-A98"/>
                                     <constraint firstAttribute="height" constant="30" id="bQf-Un-Itm"/>
@@ -67,7 +65,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDG-jw-dSh">
-                                <rect key="frame" x="96" y="109" width="182" height="134"/>
+                                <rect key="frame" x="96.5" y="109" width="182" height="134"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="134" id="Cjz-LC-hvp"/>
                                     <constraint firstAttribute="width" secondItem="yDG-jw-dSh" secondAttribute="height" multiplier="91:67" id="RsE-YP-Bcy"/>
@@ -83,7 +81,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXf-7t-DRA">
-                                <rect key="frame" x="158" y="437" width="57" height="30"/>
+                                <rect key="frame" x="159" y="437" width="57" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="mws-UB-CQm"/>
                                 </constraints>
@@ -104,7 +102,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbQ-a6-h8o">
-                                <rect key="frame" x="97" y="416" width="179" height="21"/>
+                                <rect key="frame" x="98" y="416" width="179" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="TjH-ad-zn5"/>
                                 </constraints>
@@ -155,8 +153,10 @@
                     <navigationItem key="navigationItem" id="ck7-Ma-qHz"/>
                     <connections>
                         <outlet property="emailLogin" destination="Jqb-0q-5MO" id="6hZ-BB-lkp"/>
+                        <outlet property="emailTextField" destination="Jqb-0q-5MO" id="zSv-kZ-Nht"/>
                         <outlet property="facebookLogin" destination="fBr-bz-B9n" id="z7G-ha-Prf"/>
                         <outlet property="passwordLogin" destination="fhT-XZ-kV7" id="y9o-2j-rIr"/>
+                        <outlet property="passwordTextField" destination="fhT-XZ-kV7" id="nWk-7L-Txv"/>
                         <segue destination="4Mn-mH-7FG" kind="presentation" identifier="secondFrame" id="H2C-u5-edP"/>
                     </connections>
                 </viewController>
@@ -167,7 +167,7 @@
         <!--LogASession View Controller-->
         <scene sceneID="6y5-vb-Mij">
             <objects>
-                <viewController storyboardIdentifier="LogASessionViewController" id="4Mn-mH-7FG" userLabel="LogASession View Controller" customClass="LogASessionViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogASessionViewController" id="4Mn-mH-7FG" userLabel="LogASession View Controller" customClass="LogASessionViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tif-RO-t8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +177,7 @@
                                 <color key="backgroundColor" red="0.39607843139999999" green="0.64313725489999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nj-Go-zYg">
-                                <rect key="frame" x="123" y="278" width="130" height="30"/>
+                                <rect key="frame" x="122.5" y="278" width="130" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="2vH-gl-SmB"/>
@@ -192,6 +192,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="logASession:" destination="4Mn-mH-7FG" eventType="touchUpInside" id="iyJ-Dy-2Bv"/>
                                     <segue destination="mag-UB-iLO" kind="show" identifier="next" id="bOj-VL-iz6"/>
                                 </connections>
                             </button>
@@ -202,7 +203,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkp-yW-7RL">
-                                <rect key="frame" x="97" y="108" width="182" height="134"/>
+                                <rect key="frame" x="96.5" y="108" width="182" height="134"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="h7r-kI-jpi"/>
                                     <constraint firstAttribute="height" constant="134" id="iOc-zy-Dac"/>
@@ -246,7 +247,7 @@
         <!--CBTDefinition View Controller-->
         <scene sceneID="dGz-N2-VQq">
             <objects>
-                <viewController storyboardIdentifier="CBTDef" id="mag-UB-iLO" userLabel="CBTDefinition View Controller" customClass="CBTDefViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CBTDef" id="mag-UB-iLO" userLabel="CBTDefinition View Controller" customClass="CBTDefViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pbJ-PO-HoW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,6 +264,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="CBTDef:" destination="mag-UB-iLO" eventType="touchUpInside" id="RKS-Ug-iIE"/>
                                     <segue destination="8wc-rG-dA4" kind="show" identifier="next" id="uuP-gB-Tzq"/>
                                 </connections>
                             </button>
@@ -312,7 +314,7 @@
         <!--CBTDiagram View Controller-->
         <scene sceneID="fKe-hu-Oso">
             <objects>
-                <viewController storyboardIdentifier="CBTDiagram" id="8wc-rG-dA4" userLabel="CBTDiagram View Controller" customClass="CBTDiagramViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CBTDiagram" id="8wc-rG-dA4" userLabel="CBTDiagram View Controller" customClass="CBTDiagramViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bhy-hi-nlL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -329,6 +331,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="CBTDiagram:" destination="8wc-rG-dA4" eventType="touchUpInside" id="VvR-Z3-r3U"/>
                                     <segue destination="cl7-Lx-c9Z" kind="show" identifier="next" id="lCB-08-ZLH"/>
                                 </connections>
                             </button>
@@ -378,7 +381,7 @@
         <!--PreMood View Controller-->
         <scene sceneID="PKY-Nw-WLi">
             <objects>
-                <viewController storyboardIdentifier="PreMood" id="cl7-Lx-c9Z" userLabel="PreMood View Controller" customClass="PreMoodViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PreMood" id="cl7-Lx-c9Z" userLabel="PreMood View Controller" customClass="PreMoodViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EwG-O9-p3C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,7 +475,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTH-Z9-vfm">
-                                <rect key="frame" x="153" y="456" width="70" height="70"/>
+                                <rect key="frame" x="152.5" y="456" width="70" height="70"/>
                                 <state key="normal" image="Okay"/>
                                 <connections>
                                     <action selector="okaybutton:" destination="cl7-Lx-c9Z" eventType="touchUpInside" id="AmM-jZ-X5l"/>
@@ -486,7 +489,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l18-3p-Ii3">
-                                <rect key="frame" x="94.5" y="241.5" width="47" height="15"/>
+                                <rect key="frame" x="94" y="241.5" width="47" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="I7v-Lz-7x9"/>
                                 </constraints>
@@ -640,7 +643,7 @@
         <!--Q1 View Controller-->
         <scene sceneID="GxW-Cd-UgK">
             <objects>
-                <viewController storyboardIdentifier="Q1" id="4gD-w4-Kbs" userLabel="Q1 View Controller" customClass="Q1ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q1" id="4gD-w4-Kbs" userLabel="Q1 View Controller" customClass="Q1ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVs-iw-ZPR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,19 +675,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-ll-CWF">
-                                <rect key="frame" x="97" y="94" width="28" height="21"/>
+                                <rect key="frame" x="97" y="93.5" width="28" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="je7-2O-ALn">
-                                <rect key="frame" x="29" y="89" width="51" height="31"/>
+                                <rect key="frame" x="29" y="88.5" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hdb-Xo-hox">
-                                <rect key="frame" x="29" y="127" width="51" height="31"/>
+                                <rect key="frame" x="29" y="126.5" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pb4-3n-Cnv">
-                                <rect key="frame" x="97" y="132" width="22" height="21"/>
+                                <rect key="frame" x="97" y="131.5" width="22" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -766,7 +769,7 @@
         <!--Q2 View Controller-->
         <scene sceneID="NlA-dw-13Y">
             <objects>
-                <viewController storyboardIdentifier="Q2" id="0xB-cC-kKP" userLabel="Q2 View Controller" customClass="Q2ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q2" id="0xB-cC-kKP" userLabel="Q2 View Controller" customClass="Q2ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2IH-id-gXV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -854,7 +857,7 @@
         <!--Q3 View Controller-->
         <scene sceneID="Gbl-rE-Y22">
             <objects>
-                <viewController storyboardIdentifier="Q3" id="Ggd-IF-gJg" userLabel="Q3 View Controller" customClass="Q3ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q3" id="Ggd-IF-gJg" userLabel="Q3 View Controller" customClass="Q3ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2LR-KN-9vl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -970,7 +973,7 @@
         <!--Q4 View Controller-->
         <scene sceneID="17E-k7-M1V">
             <objects>
-                <viewController storyboardIdentifier="Q4" id="Fyn-Ms-PJn" userLabel="Q4 View Controller" customClass="Q4ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q4" id="Fyn-Ms-PJn" userLabel="Q4 View Controller" customClass="Q4ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G0P-J4-ea1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -993,6 +996,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q4:" destination="Fyn-Ms-PJn" eventType="touchUpInside" id="Fbc-Tm-mlO"/>
                                     <segue destination="aoy-S5-X9O" kind="show" id="PX4-lH-VFO"/>
                                 </connections>
                             </button>
@@ -1310,7 +1314,7 @@
         <!--Q5 View Controller-->
         <scene sceneID="iKA-RZ-eGh">
             <objects>
-                <viewController storyboardIdentifier="Q5" id="aoy-S5-X9O" userLabel="Q5 View Controller" customClass="Q5ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q5" id="aoy-S5-X9O" userLabel="Q5 View Controller" customClass="Q5ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="os0-za-MWK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1333,6 +1337,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q5:" destination="aoy-S5-X9O" eventType="touchUpInside" id="zlD-7f-ZhE"/>
                                     <segue destination="czH-mO-wln" kind="show" id="bTY-NM-f2N"/>
                                 </connections>
                             </button>
@@ -1340,7 +1345,7 @@
                                 <rect key="frame" x="16" y="77.5" width="343" height="451.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emotionsCell" rowHeight="80" id="0Qf-Cb-gS3" customClass="emotionsCell" customModule="Felicity" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emotionsCell" rowHeight="80" id="0Qf-Cb-gS3" customClass="emotionsCell" customModule="Feelicity" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Qf-Cb-gS3" id="aUO-tH-cL9">
@@ -1440,7 +1445,7 @@
         <!--Q6 View Controller-->
         <scene sceneID="ynh-Kp-h2G">
             <objects>
-                <viewController storyboardIdentifier="Q6" id="czH-mO-wln" userLabel="Q6 View Controller" customClass="Q6ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q6" id="czH-mO-wln" userLabel="Q6 View Controller" customClass="Q6ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kOI-gR-Uhm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1544,6 +1549,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q6:" destination="czH-mO-wln" eventType="touchUpInside" id="tHB-Lg-8PV"/>
                                     <segue destination="SUR-e5-g6H" kind="show" id="p8v-Ne-yQA"/>
                                 </connections>
                             </button>
@@ -1634,7 +1640,7 @@
         <!--Q7 View Controller-->
         <scene sceneID="qQA-oM-F1u">
             <objects>
-                <viewController storyboardIdentifier="Q7" id="SUR-e5-g6H" userLabel="Q7 View Controller" customClass="Q7ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q7" id="SUR-e5-g6H" userLabel="Q7 View Controller" customClass="Q7ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zfz-ib-1H6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1738,7 +1744,7 @@
         <!--Q8 View Controller-->
         <scene sceneID="ytt-Cx-k6Y">
             <objects>
-                <viewController storyboardIdentifier="Q8" id="sEX-Of-5Rq" userLabel="Q8 View Controller" customClass="Q8ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q8" id="sEX-Of-5Rq" userLabel="Q8 View Controller" customClass="Q8ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8C-gu-Fh2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1851,7 +1857,7 @@
         <!--Q9 View Controller-->
         <scene sceneID="AjZ-gH-q4e">
             <objects>
-                <viewController storyboardIdentifier="Q9" id="I6S-ac-pG0" userLabel="Q9 View Controller" customClass="Q9ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q9" id="I6S-ac-pG0" userLabel="Q9 View Controller" customClass="Q9ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SmD-TM-ZAg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1958,7 +1964,7 @@
         <!--Q10 View Controller-->
         <scene sceneID="6bx-3y-cfH">
             <objects>
-                <viewController storyboardIdentifier="Q10" id="Jzj-96-l9p" userLabel="Q10 View Controller" customClass="Q10ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q10" id="Jzj-96-l9p" userLabel="Q10 View Controller" customClass="Q10ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxv-pq-Zga">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1984,6 +1990,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q10:" destination="Jzj-96-l9p" eventType="touchUpInside" id="O1T-gR-DQW"/>
                                     <action selector="addAnotherScenario:" destination="Jzj-96-l9p" eventType="touchUpInside" id="YQI-Gz-aAA"/>
                                     <segue destination="9wo-h1-Lle" kind="show" identifier="next" id="aIk-IU-Lrh"/>
                                 </connections>
@@ -2106,7 +2113,7 @@
         <!--Q11 View Controller-->
         <scene sceneID="vCY-Mg-zO3">
             <objects>
-                <viewController storyboardIdentifier="Q11" id="9wo-h1-Lle" userLabel="Q11 View Controller" customClass="Q11ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q11" id="9wo-h1-Lle" userLabel="Q11 View Controller" customClass="Q11ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mlk-es-DvU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2218,7 +2225,7 @@
         <!--Q12 View Controller-->
         <scene sceneID="TkX-tE-8Jk">
             <objects>
-                <viewController storyboardIdentifier="Q12" id="f6c-Xa-LaG" userLabel="Q12 View Controller" customClass="Q12ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q12" id="f6c-Xa-LaG" userLabel="Q12 View Controller" customClass="Q12ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWu-dq-f3Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2329,7 +2336,7 @@
         <!--Q13 View Controller-->
         <scene sceneID="22p-NC-fQO">
             <objects>
-                <viewController storyboardIdentifier="Q13" id="dST-QR-9L8" userLabel="Q13 View Controller" customClass="Q13ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q13" id="dST-QR-9L8" userLabel="Q13 View Controller" customClass="Q13ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwA-jp-OqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2571,7 +2578,7 @@
         <!--Cognitive Distortions Popup-->
         <scene sceneID="Y8M-PY-6ow">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="wU2-Pf-BRh" customClass="CognitiveDistortionsPopup" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="wU2-Pf-BRh" customClass="CognitiveDistortionsPopup" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nmG-5G-b7d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2634,7 +2641,7 @@
         <!--Q14 View Controller-->
         <scene sceneID="tL3-HJ-vas">
             <objects>
-                <viewController storyboardIdentifier="Q14" id="M2D-wH-D4P" userLabel="Q14 View Controller" customClass="Q14ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q14" id="M2D-wH-D4P" userLabel="Q14 View Controller" customClass="Q14ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UDE-2U-sxT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2758,7 +2765,7 @@
         <!--Q15 View Controller-->
         <scene sceneID="DOY-Rk-i1L">
             <objects>
-                <viewController storyboardIdentifier="Q15" id="5PJ-6T-Ndr" userLabel="Q15 View Controller" customClass="Q15ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q15" id="5PJ-6T-Ndr" userLabel="Q15 View Controller" customClass="Q15ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKM-Bs-Z9N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2861,7 +2868,7 @@
         <!--Q16 View Controller-->
         <scene sceneID="22u-SV-R5x">
             <objects>
-                <viewController storyboardIdentifier="Q16" id="odE-hh-acc" userLabel="Q16 View Controller" customClass="Q16ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q16" id="odE-hh-acc" userLabel="Q16 View Controller" customClass="Q16ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1H3-dR-TWT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2965,7 +2972,7 @@
         <!--Q17 View Controller-->
         <scene sceneID="o9C-Us-ste">
             <objects>
-                <viewController storyboardIdentifier="Q17" id="dMW-Ho-Q1l" userLabel="Q17 View Controller" customClass="Q17ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q17" id="dMW-Ho-Q1l" userLabel="Q17 View Controller" customClass="Q17ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yh2-gP-6Zy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3083,7 +3090,7 @@
         <!--Q18 View Controller-->
         <scene sceneID="oTB-xO-aex">
             <objects>
-                <viewController storyboardIdentifier="Q18" id="gi0-AI-B1d" userLabel="Q18 View Controller" customClass="Q18ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q18" id="gi0-AI-B1d" userLabel="Q18 View Controller" customClass="Q18ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hd3-LI-Fwf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3118,6 +3125,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q18:" destination="gi0-AI-B1d" eventType="touchUpInside" id="IOy-Bl-a13"/>
                                     <segue destination="8Kg-dt-YAV" kind="show" id="YQ0-yH-P3a"/>
                                 </connections>
                             </button>
@@ -3254,7 +3262,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gog-Jp-plw">
-                                <rect key="frame" x="124.5" y="347.5" width="125" height="25"/>
+                                <rect key="frame" x="125" y="347.5" width="125" height="25"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sensitive">
@@ -3311,7 +3319,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vle-We-tBB">
-                                <rect key="frame" x="187" y="20" width="0.0" height="647"/>
+                                <rect key="frame" x="187.5" y="20" width="0.0" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" id="l58-Ap-Tad"/>
@@ -3427,7 +3435,7 @@
         <!--Q19 View Controller-->
         <scene sceneID="zIl-yO-ICX">
             <objects>
-                <viewController storyboardIdentifier="Q19" id="8Kg-dt-YAV" userLabel="Q19 View Controller" customClass="Q19ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q19" id="8Kg-dt-YAV" userLabel="Q19 View Controller" customClass="Q19ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LkW-bA-2Se">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3458,6 +3466,7 @@
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="Q19:" destination="8Kg-dt-YAV" eventType="touchUpInside" id="LTw-gR-z5t"/>
                                     <segue destination="ggZ-Sp-XJf" kind="show" id="PfC-cp-Z6A"/>
                                 </connections>
                             </button>
@@ -3471,7 +3480,7 @@
                                 <rect key="frame" x="16" y="77.5" width="343" height="451.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emotionsCell" rowHeight="93" id="B0j-TD-r3A" customClass="emotionsCell" customModule="Felicity" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="emotionsCell" rowHeight="93" id="B0j-TD-r3A" customClass="emotionsCell" customModule="Feelicity" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B0j-TD-r3A" id="sgP-Jm-7Na">
@@ -3579,7 +3588,7 @@
         <!--Q20 View Controller-->
         <scene sceneID="wXt-jb-CQ1">
             <objects>
-                <viewController id="ggZ-Sp-XJf" userLabel="Q20 View Controller" customClass="Q20ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ggZ-Sp-XJf" userLabel="Q20 View Controller" customClass="Q20ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yLM-vW-PB6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3801,13 +3810,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erw-10-Qxe">
-                                <rect key="frame" x="244" y="452" width="29" height="21"/>
+                                <rect key="frame" x="244.5" y="452" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZn-bW-GQ5">
-                                <rect key="frame" x="142" y="467" width="90" height="90"/>
+                                <rect key="frame" x="142.5" y="467" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="I6N-cL-MeU"/>
                                     <constraint firstAttribute="height" constant="90" id="zZY-rr-xf1"/>
@@ -3836,7 +3845,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le6-h4-AUi">
-                                <rect key="frame" x="68" y="369" width="90" height="90"/>
+                                <rect key="frame" x="68" y="369" width="90.5" height="90"/>
                                 <state key="normal" image="Tired"/>
                                 <connections>
                                     <action selector="TiredButton:" destination="Xwr-ck-YFr" eventType="touchUpInside" id="Dy4-eh-AOg"/>
@@ -3920,7 +3929,7 @@
         <!--End View Controller-->
         <scene sceneID="gEE-Ga-E8O">
             <objects>
-                <viewController storyboardIdentifier="End" id="asi-I8-Sje" userLabel="End View Controller" customClass="EndViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="End" id="asi-I8-Sje" userLabel="End View Controller" customClass="EndViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UkC-8i-AP3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3956,6 +3965,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="done:" destination="asi-I8-Sje" eventType="touchUpInside" id="1nw-Qv-RsA"/>
                                     <segue destination="4Mn-mH-7FG" kind="show" id="o4w-li-vs1"/>
                                 </connections>
                             </button>
@@ -4020,19 +4030,19 @@
         <!--ReferencesPopUp View Controller-->
         <scene sceneID="YNa-bX-3ww">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="kgj-7s-OFy" userLabel="ReferencesPopUp View Controller" customClass="ReferencesPopup" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="kgj-7s-OFy" userLabel="ReferencesPopUp View Controller" customClass="ReferencesPopup" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XeQ-T7-fvv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9UR-n7-Oxf">
-                                <rect key="frame" x="22.5" y="94" width="275" height="353"/>
+                                <rect key="frame" x="22.5" y="94" width="330" height="479"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Works Cited" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-XO-SuJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="323"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-VT-ZRg">
-                                        <rect key="frame" x="115" y="323" width="46" height="30"/>
+                                        <rect key="frame" x="115" y="323" width="101" height="156"/>
                                         <state key="normal" title="OK"/>
                                     </button>
                                 </subviews>
@@ -4072,7 +4082,7 @@
         <!--View Controller-->
         <scene sceneID="3PH-aQ-9rf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2XY-Qd-Hf9" customClass="ViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2XY-Qd-Hf9" customClass="ViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZOB-FS-1RK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -4095,7 +4105,7 @@
         <!--SignUp View Controller-->
         <scene sceneID="erc-Xl-yij">
             <objects>
-                <viewController id="QLE-cy-EZ7" userLabel="SignUp View Controller" customClass="SignUpViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QLE-cy-EZ7" userLabel="SignUp View Controller" customClass="SignUpViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M1y-3A-EFk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4126,7 +4136,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WBI-cv-lMQ">
-                                <rect key="frame" x="62" y="270" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="270" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="OAt-6y-48V"/>
                                 </constraints>
@@ -4135,7 +4145,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PVe-tT-Nv0">
-                                <rect key="frame" x="62" y="318" width="250" height="30"/>
+                                <rect key="frame" x="62.5" y="318" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="lLL-U5-ozp"/>
                                 </constraints>
@@ -4144,7 +4154,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHm-r8-4Qz">
-                                <rect key="frame" x="96" y="109" width="182" height="134"/>
+                                <rect key="frame" x="96.5" y="109" width="182" height="134"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="134" id="f9b-TP-XUn"/>
                                     <constraint firstAttribute="width" constant="182" id="k6c-qj-Pn3"/>
@@ -4152,7 +4162,7 @@
                                 <state key="normal" image="Sun"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5J-z4-VNt">
-                                <rect key="frame" x="159" y="417" width="58" height="30"/>
+                                <rect key="frame" x="158.5" y="417" width="58" height="30"/>
                                 <state key="normal" title="Go Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -4197,7 +4207,7 @@
         <!--TAndC View Controller-->
         <scene sceneID="kWw-gT-0Gq">
             <objects>
-                <viewController storyboardIdentifier="TAndCViewController" id="5vU-M0-PXQ" userLabel="TAndC View Controller" customClass="TAndCViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TAndCViewController" id="5vU-M0-PXQ" userLabel="TAndC View Controller" customClass="TAndCViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tSr-aQ-usd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4345,7 +4355,7 @@ Credit &amp; Contact Information
         <!--PostMood View Controller-->
         <scene sceneID="kW0-1H-a8J">
             <objects>
-                <viewController storyboardIdentifier="PostMood" id="zHX-8e-mEE" userLabel="PostMood View Controller" customClass="PostMoodViewController" customModule="Felicity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostMood" id="zHX-8e-mEE" userLabel="PostMood View Controller" customClass="PostMoodViewController" customModule="Feelicity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7x-O6-3da">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4362,6 +4372,7 @@ Credit &amp; Contact Information
                                 </constraints>
                                 <state key="normal" image="Arrow"/>
                                 <connections>
+                                    <action selector="PostMood:" destination="zHX-8e-mEE" eventType="touchUpInside" id="bQg-uM-Hfd"/>
                                     <segue destination="asi-I8-Sje" kind="show" id="7gj-9R-ZBq"/>
                                 </connections>
                             </button>
@@ -4428,7 +4439,7 @@ Credit &amp; Contact Information
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ru-87-sD7">
-                                <rect key="frame" x="94.5" y="146" width="47" height="15"/>
+                                <rect key="frame" x="94" y="146" width="47" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="CYz-sP-a0j"/>
                                 </constraints>
@@ -4485,7 +4496,7 @@ Credit &amp; Contact Information
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYD-oc-wwK">
-                                <rect key="frame" x="168.5" y="414" width="39" height="15"/>
+                                <rect key="frame" x="168" y="414" width="39" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="Rft-Tt-ch4"/>
                                 </constraints>
@@ -4587,9 +4598,8 @@ Credit &amp; Contact Information
         <image name="Works Cited" width="300" height="323"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rdd-Dc-Hbq"/>
-        <segue reference="SYS-DN-fyl"/>
-        <segue reference="H2C-u5-edP"/>
-        <segue reference="adA-9h-ZFA"/>
+        <segue reference="dKF-yb-xtK"/>
+        <segue reference="o4w-li-vs1"/>
+        <segue reference="8uP-pC-YDv"/>
     </inferredMetricsTieBreakers>
 </document>

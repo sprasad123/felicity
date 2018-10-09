@@ -26,5 +26,10 @@ class Q6ViewController: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    
+    @IBAction func Q6(_ sender: Any) {
+        Analytics.logEvent("land_on_Q7", parameters: ["land_on_Q7": true])
+    }
+    
 
 }

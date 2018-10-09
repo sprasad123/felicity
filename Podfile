@@ -10,6 +10,7 @@ target 'Feelicity' do
   pod 'GoogleSignIn'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
+  pod 'GoogleAnalytics'
   use_frameworks!
 
   # Pods for Feelicity

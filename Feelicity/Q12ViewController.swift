@@ -19,6 +19,13 @@ class Q12ViewController: UIViewController {
     
     override func viewDidLoad() {
         Journal.current?.currentPage = 16
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        textBox.inputAccessoryView = toolbar
         // 3
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -29,6 +36,10 @@ class Q12ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
     @IBAction func submit(_ sender: Any) {
@@ -46,6 +57,7 @@ class Q12ViewController: UIViewController {
             Journal.current?.isExcludingInfoNo = false
         }
         Journal.current?.excludedInfo = textBox.text
+        Analytics.logEvent("land_on_Q13", parameters: ["land_on_Q13": true])
     }
     
 }

@@ -185,4 +185,9 @@ class  Q5ViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     }
     
+    @IBAction func Q5(_ sender: Any) {
+        Analytics.logEvent("land_on_Q6", parameters: ["land_on_Q6": true])
+    }
+    
+    
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class CBTDiagramViewController: UIViewController {
     
@@ -24,6 +25,11 @@ class CBTDiagramViewController: UIViewController {
         // 5
         navigationItem.titleView = imageView
     }
+    
+    @IBAction func CBTDiagram(_ sender: Any) {
+        Analytics.logEvent("land_on_PreMood", parameters: ["land_on_PreMood": true])
+    }
+    
     
     
 }

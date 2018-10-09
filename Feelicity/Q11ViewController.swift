@@ -63,6 +63,7 @@ class Q11ViewController: UIViewController {
         else {
             Journal.current?.exaggeration = false
         }
+        Analytics.logEvent("land_on_Q12", parameters: ["land_on_Q12": true])
     }
     
 }

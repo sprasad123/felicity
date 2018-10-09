@@ -18,6 +18,7 @@ class  Q2ViewController: UIViewController {
     
     @IBAction func Submit(_ sender: Any) {
         Journal.current?.thoughtDescription1 = Q2TextBox.text
+        Analytics.logEvent("land_on_Q3", parameters: ["land_on_Q3": true])
     }
     
     
@@ -25,6 +26,15 @@ class  Q2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Journal.current?.currentPage = 6
+        
+        //Done button for dismissing keyboard
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector (doneClicked))
+        toolbar.setItems([flexibleSpace, doneButton], animated: false)
+        Q2TextBox.inputAccessoryView = toolbar
+        
         // 3
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .scaleAspectFit
@@ -35,6 +45,10 @@ class  Q2ViewController: UIViewController {
         
         // 5
         navigationItem.titleView = imageView
+    }
+    
+    @objc func doneClicked() {
+        view.endEditing(true)
     }
     
 }

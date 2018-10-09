@@ -127,6 +127,7 @@ class Q13ViewController: UIViewController {
         else {
             Journal.current?.noneOfTheAbove = false
         }
+        Analytics.logEvent("land_on_Q14", parameters: ["land_on_Q14": true])
     }
     
 }

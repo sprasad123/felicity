@@ -174,6 +174,11 @@ class LogASessionViewController: UIViewController, GIDSignInUIDelegate {
         }
     }
     
+    @IBAction func logASession(_ sender: Any) {
+        Analytics.logEvent("land_on_CBT_Def", parameters: ["land_on_CBT_Def": true])
+    }
+    
+    
     @IBAction func goToSignInVC() {
         GIDSignIn.sharedInstance().signOut()
         FBSDKLoginManager().logOut()
